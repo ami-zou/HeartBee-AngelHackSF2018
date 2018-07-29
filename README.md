@@ -3,7 +3,7 @@
 
 ========Team==============
 
-This platform is developed from Scratch during AngelHacks SF 2018 on July 28 - 29, 2018 in Parisoma, San Francisco.
+This platform is developed from scratch during AngelHacks SF 2018 on July 28 - 29, 2018 in Parisoma, San Francisco.
 
 Team member:
 
