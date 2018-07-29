@@ -1,102 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>HeartBee</title>
-<link rel="stylesheet" href="style/style.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="AgoraRTCSDK-2.3.1.js"></script>
-<!--<script src="vendor/jquery.js"></script> -->
-</head>
-
-<body>
-  <!-- Header -->
-  <!--header class="w3-container w3-xlarge w3-padding-24">
-    <a href="#" class="w3-left">HeartBee</a>
-    <a href="#MyAccount" class="w3-right w3-button">My Account</a>
-  </header-->
-  <div class = "header">
-    <img src="header-bg.png"/>
-    <a href="#">HeartBee</a>
-  </div>
-
-  <!--ITEMS-->
-  <div class = "items">
-    <div class = "item"><img id = "item1" src="item1.png"/></div>
-    <div class = "item"><img id = "item2" src="item2.png"/></div>
-    <div class = "item"><img id = "item3" src="item3.png"/></div>
-  </div>
-
-  <!--DEVICE & SETUP-->
-  <div id="div_device" class="panel panel-default">
-    <div class="select hide">
-      <label for="audioSource">Audio source: </label><select id="audioSource"></select>
-    </div>
-    <div class="select hide">
-      <label for="videoSource">Video source: </label><select id="videoSource"></select>
-    </div>
-  </div>
-
-  <div id="div_join" class="panel panel-default">
-    <div class="panel-body">
-<!-- Input key value, now setting as default "f5e889dc03f844c4aaa5fda833f5cf26"
-     Input channel value, now setting as default "1000"
-      Key: <input id="key" type="text" value="f5e889dc03f844c4aaa5fda833f5cf26" size="36"></input>
-      Channel: <input id="channel" type="text" value="1000" size="4"></input>
-      Host:
--->
-      <input class="hide" id="video" type="checkbox" checked></input>
-      <button id="join" class="btn btn-primary" onclick="join()">Start</button>
-      <button id="leave" class="btn btn-primary" onclick="leave()">Stop</button>
-      <button id="publish" class="btn btn-primary hide" onclick="publish()">Publish</button>
-      <button id="unpublish" class="btn btn-primary hide" onclick="unpublish()">Unpublish</button>
-    </div>
-  </div>
-
-    <!--style>
-    .video__box{width:910px; margin:0 auto; overflow:hidden;}
-    .video__main{ width:810px; height:607px;float:left }
-    .video__list{ width:200px; height:607px; float:left;}
-    .video__item{ width:200px; height:174px; hei background:url(/img/icon_live.png) center center no-repeat; }
-    </style>
-    <div class="video__main">
-    </div>
-    <div class="video__list">
-        <div class="video__item"></div>
-        <div id="video" class="video__item">
-            <div id="agora_local"></div>
-        </div>
-    </div-->
-
-<!--Embedded Video + Heart-rate -->
-<div class="important">
-  <div class="vid">
-    <div id="video" style="margin:0 auto;">
-      <div id="agora_local" style="
-        float: left;
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-        width: 630px;
-        height: 441px;
-        display: inline-block;">
-      </div>
-    </div>
-  </div>
-  <div class="blocks">
-    <div id="heartrate" style="background:yellow;">
-      <p id="insert"></p>
-      <p>good</p>
-    </div>
-    <div id="notification" style="background:red;">
-      <h1>OMG your grandma's heartrate is TOO HIGH</h1>
-    </div>
-  </div>
-<div id="important">
-<!--default value: 210px * 147px  (588)
-also change float
-set margin-left and margin-right both to auto-->
-
-<script language="javascript">
-
 if(!AgoraRTC.checkSystemRequirements()) {
   alert("browser is no support webRTC");
 }
@@ -240,11 +141,15 @@ function join() {
 
 function leave() {
   document.getElementById("leave").disabled = true;
+  document.getElementById("join").disabled = false; //enable user to re-join
   client.leave(function () {
     console.log("Leavel channel successfully");
   }, function (err) {
     console.log("Leave channel failed");
   });
+
+// TODO: Remove video after leave()
+  document.getElementById("video").display='none';
 }
 
 function publish() {
@@ -292,14 +197,3 @@ if(heartRate > threshhold){
   join();
   //getDevices();
 }
-
-</script>
-
-<script language="javascript">
-
-
-
-</script>
-
-</body>
-</html>

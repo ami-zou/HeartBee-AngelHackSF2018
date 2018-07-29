@@ -85,31 +85,3 @@ if ('serviceWorker' in navigator) {
     console.log('Service Worker registration failed: ', err);
   });
 }
-/*
-*Here is the Agora part!!
-*
-*/
-
-if(!AgoraRTC.checkSystemRequirements()) {
-  alert("browser is no support webRTC");
-}
-
-/* select Log type */
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.NONE);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.ERROR);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.WARNING);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.INFO);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.DEBUG);
-
-/* simulated data to proof setLogLevel() */
-AgoraRTC.Logger.error('this is error');
-AgoraRTC.Logger.warning('this is warning');
-AgoraRTC.Logger.info('this is info');
-AgoraRTC.Logger.debug('this is debug');
-
-var client, localStream, camera, microphone;
-
-var audioSelect = document.querySelector('select#audioSource');
-var videoSelect = document.querySelector('select#videoSource');
-
-client = AgoraRTC.createClient({mode:'interop'});
