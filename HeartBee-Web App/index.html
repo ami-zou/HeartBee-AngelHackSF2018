@@ -14,8 +14,8 @@
     <a href="#" class="w3-left">HeartBee</a>
     <a href="#MyAccount" class="w3-right w3-button">My Account</a>
   </header-->
-  <div class = "header">
-    <img src="assets/header.png"/>
+  <div class = "header" style="width:100%; background-size:100%;">
+    <img src="assets/web-header.jpg"/>
     <a href="#">HeartBee</a>
   </div>
 
@@ -37,7 +37,7 @@
   </div>
 
   <div id="div_join" class="panel panel-default" style="width: 100%; background:green; ">
-    <div class="panel-body" style="float:right; width:25%; margin-bottom:2%;">
+    <div class="panel-body" style="float:right; width:29%; margin-bottom:2%;">
 <!-- Input key value, now setting as default "f5e889dc03f844c4aaa5fda833f5cf26"
      Input channel value, now setting as default "1000"
       Key: <input id="key" type="text" value="f5e889dc03f844c4aaa5fda833f5cf26" size="36"></input>
@@ -96,8 +96,10 @@ margin:0 auto; -->
       padding-right: 5%;
       margin-bottom: 10%;
       ">
-      <p id="insert"></p>
-      <p>good</p>
+      <div id="heartrate-content" style="float:left; margin-left:45%;">
+        <p id="insert_heartrate">Heart Rate</p>
+        <p id="insert_condition">Condition</p>
+      </div>
     </div>
     <div id="notification" style="
       float: left;
@@ -112,6 +114,8 @@ also change float
 set margin-left and margin-right both to auto-->
 
 <script src="scripts/agora.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.282.1/aws-sdk.js"></script>
+<script src="scripts/scan.js"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>

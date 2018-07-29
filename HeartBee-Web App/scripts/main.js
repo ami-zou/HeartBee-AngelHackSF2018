@@ -5,23 +5,123 @@
 </resources>
 
 'use strict';
+console.log("HIIIIII! Main.js is running");
 
+
+
+//var AWS = require("aws-sdk");
+console.log("scan running");
+console.log("trying to scan");
+
+var creds = new AWS.CognitoIdentityCredentials({
+  IdentityPoolId: 'us-east-2:047171aa-32a6-41bb-880d-318fbc995875'
+});
+
+
+AWS.config.credentials = creds;
+
+AWS.config.update({
+  region: "us-east-2"
+});
+/*
+update({
+   region: "us-east-2",
+   credentials: {
+     accessKeyId: "AKIAIURLYQOLOGXZ7O4Q",
+     secreteAccessKey: "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"
+   }
+   //endpoint: "http://localhost:8000"
+});
+*/
+'use strict';
+
+var heartRate = 200;
+
+
+var upper_threshhold = 120;
+var lower_threshhold = 20;
+//===============================================
+
+document.getElementById("notification").style.visibility='hidden';
+console.log("Hide notification!");
+var docClient = new AWS.DynamoDB.DocumentClient();
+
+var params = {
+   TableName: "fitbit_data",
+   ProjectionExpression: "heartRate"
+};
+
+console.log("Scanning fitbit table.");
+docClient.scan(params, onScan);
+
+function onScan(err, data) {
+ console.log("scanning");
+   if (err) {
+       console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
+   } else {
+       // print all the movies
+       console.log("Scan succeeded.");
+       data.Items.forEach(function(hR) {
+          console.log(
+               hR);
+       });
+
+       // continue scanning if we have more movies, because
+       // scan can retrieve a maximum of 1MB of data
+       if (typeof data.LastEvaluatedKey != "undefined") {
+           console.log("Scanning for more...");
+           params.ExclusiveStartKey = data.LastEvaluatedKey;
+           docClient.scan(params, onScan);
+       }
+
+
+       //ALL GOOD: UPDATE DATA
+       //TRIGGER
+       data.Items.forEach(check);
+
+       function check(hR){
+         heartRate = hR;
+         document.getElementById("insert_heartrate").innerHTML = heartRate;
+         checkHR();
+
+         setTimeout(check, 5000);
+       }
+
+
+
+       function checkHR(){
+         if(heartRate <= lower_threshhold){
+           console.log("heartRate too low!!!");
+           document.getElementById("insert_condition").innerHTML = "Heart Rate Too Low";
+         }else if(heartRate > upper_threshhold){
+           console.log("Display notification!");
+           document.getElementById("insert_condition").innerHTML = "Heart Rate Too High";
+           document.getElementById("notification").style.visibility='visible';
+         //document.getElementById("insert_condition").innerHTML.style.color = red;
+           join();
+           displayNotification();
+         //getDevices();
+         }else{
+           document.getElementById("insert_condition").innerHTML = "Good";
+         }
+       }
+
+
+   }
+
+
+}
 /*
 var myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
 */
-console.log("HIIIIII! Main.js is running");
 
 /*register sw
 */
 
 //Notification + HeartRate set up
-var heartRate = 200;
-var threshhold = 120;
-document.getElementById("insert").innerHTML = heartRate;
 
-document.getElementById("notification").style.visibility='hidden';
-console.log("Hide notification!");
+
 
 /*
 * Now let's work on notification
@@ -96,14 +196,4 @@ if ('serviceWorker' in navigator) {
    .catch(function(err) {
     console.log('Service Worker registration failed: ', err);
   });
-}
-
-//TRIGGER
-
-if(heartRate > threshhold){
-  console.log("Display notification!");
-  document.getElementById("notification").style.visibility='visible';
-  join();
-  displayNotification();
-  //getDevices();
 }

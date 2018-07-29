@@ -13,6 +13,8 @@ import MapKit
 
 class MapViewController: UIViewController, LocationUpdateDelegate, MKMapViewDelegate {
    
+    @IBOutlet weak var HeaderImageView: UIImageView!
+    
     @IBOutlet weak var mapView: MKMapView!
     
     var area: NSMutableArray = NSMutableArray()
@@ -25,6 +27,11 @@ class MapViewController: UIViewController, LocationUpdateDelegate, MKMapViewDele
 
         createPolyline()
         // Do any additional setup after loading the view.
+        
+       // let image = UIImage(named: "mobile-nav.png")
+      //  HeaderImageView = UIImageView(image: image!)
+        //HeaderImageView.frame = CGRect(x: 0, y: 0, width: 60, height: 60)
+        //myView.addSubview(imageView)
     }
 
     override func didReceiveMemoryWarning() {
