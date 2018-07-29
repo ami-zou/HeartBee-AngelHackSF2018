@@ -1,0 +1,114 @@
+
+
+.header {
+    height:60px;
+    width:100%;
+    background: #71c6a4;
+    background-size: cover;
+    overflow: hidden;
+/*
+margin:0px auto;
+background-color: #45c7c6;
+https://drive.google.com/drive/u/0/folders/10j0yK32V8b1r0nsQAqJllvaRmEECspd0
+background-image: url ('header-bg.png');
+*/
+}
+
+.header img {
+    zoom 4;
+
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
+    object-fit: cover;
+}
+
+.logo{
+  background: blue;
+}
+
+body{
+  background: lightgrey;
+}
+
+button{
+  background: #71c6a4;
+}
+
+img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+}
+
+
+.grid-container{
+  display: grid;
+  width: 100%;
+  grid-gap: 50px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "1 2 3";
+}
+
+.items{
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+	/*display: table;
+
+	*/
+	overflow: hidden;
+
+}
+
+.item{
+  background-color: white;
+  float: left;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+/*
+
+*/
+  width: 30%;
+  height: 60%;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.item img{
+  border-radius: 25px;
+}
+
+.item1{
+  background-color: blue;
+  /*grid-area: 1;*/
+}
+
+.item2{
+  background-color: white;
+  /*grid-area: 2;*/
+}
+
+.item3{
+  background-color: red;
+  /*grid-area: 3;*/
+}
+
+#audioSource{
+  display: none;
+}
+
+[for="audioSource"] {
+  display: none;
+}
+
+.select{
+/*  display: none; */
+}
+
+.hide{
+  display: none;
+}

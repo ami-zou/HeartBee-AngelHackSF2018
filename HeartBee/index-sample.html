@@ -58,7 +58,7 @@ if(!AgoraRTC.checkSystemRequirements()) {
 // AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.NONE);
 // AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.ERROR);
 // AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.WARNING);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.INFO);  
+// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.INFO);
 // AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.DEBUG);
 
 /* simulated data to proof setLogLevel() */
@@ -91,7 +91,7 @@ function join() {
         //localStream = AgoraRTC.createStream({streamID: uid, audio: false, cameraId: camera, microphoneId: microphone, video: false, screen: true, extensionId: 'minllpmhdgpndnkomcoccfekfegnlikg'});
         if (document.getElementById("video").checked) {
           localStream.setVideoProfile('720p_3');
-          
+
         }
 
         // The user has granted access to the camera and mic.
