@@ -10,6 +10,18 @@
 */
 'use strict';
 
+var myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';
+
+console.log("print");
+
+
+
+/*
+* Now let's work on notification
+*
+*/
+
 Notification.requestPermission( function(status){
     console.log('Notification permission: ',status);
   }
@@ -56,7 +68,7 @@ function subscribeUser() {
 }
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').then(function(reg) {
+  navigator.serviceWorker.register('/sw.js').then(function(reg) {
     console.log('Service Worker Registered!', reg);
 
     reg.pushManager.getSubscription().then(function(sub) {
