@@ -35,7 +35,7 @@ update({
 */
 'use strict';
 
-var heartRate = 200;
+var heartRate = 150;
 
 var upper_threshhold = 120;
 var lower_threshhold = 20;
