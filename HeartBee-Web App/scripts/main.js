@@ -37,13 +37,14 @@ update({
 
 var heartRate = 200;
 
-
 var upper_threshhold = 120;
 var lower_threshhold = 20;
 //===============================================
 document.getElementById("insert_heartrate").innerHTML = heartRate;
+document.getElementById("notification").style.visibility='hidden';
+console.log("Hide notification!");
 
-function checkHR(){
+function checkHeartRate(){
   if(heartRate <= lower_threshhold){
     console.log("heartRate too low!!!");
     document.getElementById("insert_condition").innerHTML = "Heart Rate Too Low";
@@ -60,11 +61,10 @@ function checkHR(){
   }
 }
 
-checkHR();
+checkHeartRate();
 
 //==========NOTIFICATION===========
-document.getElementById("notification").style.visibility='hidden';
-console.log("Hide notification!");
+
 
 //==========DATA BASE SCANNING============
 var docClient = new AWS.DynamoDB.DocumentClient();
