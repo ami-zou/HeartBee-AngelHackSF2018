@@ -1,0 +1,6 @@
+framework module HyperTrackCore {
+  umbrella header "HyperTrackCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

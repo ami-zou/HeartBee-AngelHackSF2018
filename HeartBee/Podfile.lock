@@ -1,0 +1,16 @@
+PODS:
+  - HyperTrackCore (0.8.1)
+
+DEPENDENCIES:
+  - HyperTrackCore
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HyperTrackCore
+
+SPEC CHECKSUMS:
+  HyperTrackCore: 075eb8054001dc858a78e4a55827fdc547fc25b4
+
+PODFILE CHECKSUM: 9302c0df6d77154cc651ad84b3315de3de2351a9
+
+COCOAPODS: 1.5.3

@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D01AFE284306D2E0725D24 /* Pods_HeartBeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73988A70D733578E0852DDF /* Pods_HeartBeeUITests.framework */; };
+		5AF204EB4B22342A3C5A294B /* Pods_HeartBeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4D99E4A320905A92A92BAE /* Pods_HeartBeeTests.framework */; };
 		A62DF29A210E16B5009482A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF299210E16B5009482A9 /* AppDelegate.swift */; };
-		A62DF29C210E16B5009482A9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF29B210E16B5009482A9 /* FirstViewController.swift */; };
-		A62DF29E210E16B5009482A9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF29D210E16B5009482A9 /* SecondViewController.swift */; };
+		A62DF29C210E16B5009482A9 /* HeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF29B210E16B5009482A9 /* HeartRateViewController.swift */; };
+		A62DF29E210E16B5009482A9 /* AgoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF29D210E16B5009482A9 /* AgoraViewController.swift */; };
 		A62DF2A1210E16B5009482A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62DF29F210E16B5009482A9 /* Main.storyboard */; };
 		A62DF2A3210E16B8009482A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62DF2A2210E16B8009482A9 /* Assets.xcassets */; };
 		A62DF2A6210E16B8009482A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62DF2A4210E16B8009482A9 /* LaunchScreen.storyboard */; };
 		A62DF2B1210E16B8009482A9 /* HeartBeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF2B0210E16B8009482A9 /* HeartBeeTests.swift */; };
 		A62DF2BC210E16B8009482A9 /* HeartBeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF2BB210E16B8009482A9 /* HeartBeeUITests.swift */; };
+		A62DF2CD210E1DF3009482A9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF2CC210E1DF3009482A9 /* MapViewController.swift */; };
+		A62DF2CF210E2C93009482A9 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DF2CE210E2C93009482A9 /* RankViewController.swift */; };
+		CB987878448511EF44686BA9 /* Pods_HeartBee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBF20223EFDC26D859010D4 /* Pods_HeartBee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141CA1A959567CC381312BD5 /* Pods-HeartBeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartBeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartBeeTests/Pods-HeartBeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ABEF8626EFAABC2765AB72C /* Pods-HeartBeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartBeeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartBeeTests/Pods-HeartBeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		87E389F0B1A9042EF0824D2F /* Pods-HeartBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartBee.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartBee/Pods-HeartBee.release.xcconfig"; sourceTree = "<group>"; };
+		A02492B8CA14371F38F3D763 /* Pods-HeartBee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartBee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartBee/Pods-HeartBee.debug.xcconfig"; sourceTree = "<group>"; };
 		A62DF296210E16B5009482A9 /* HeartBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62DF299210E16B5009482A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A62DF29B210E16B5009482A9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A62DF29D210E16B5009482A9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A62DF29B210E16B5009482A9 /* HeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewController.swift; sourceTree = "<group>"; };
+		A62DF29D210E16B5009482A9 /* AgoraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraViewController.swift; sourceTree = "<group>"; };
 		A62DF2A0210E16B5009482A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A62DF2A2210E16B8009482A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A62DF2A5210E16B8009482A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		A62DF2B7210E16B8009482A9 /* HeartBeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartBeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62DF2BB210E16B8009482A9 /* HeartBeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartBeeUITests.swift; sourceTree = "<group>"; };
 		A62DF2BD210E16B8009482A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62DF2CC210E1DF3009482A9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A62DF2CE210E2C93009482A9 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		AD04D63EB0E79C364BA32983 /* Pods-HeartBeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartBeeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartBeeUITests/Pods-HeartBeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEBF20223EFDC26D859010D4 /* Pods_HeartBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartBee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4D99E4A320905A92A92BAE /* Pods_HeartBeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartBeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EC7789AB8F744504C4F4C1 /* Pods-HeartBeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartBeeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartBeeUITests/Pods-HeartBeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E73988A70D733578E0852DDF /* Pods_HeartBeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartBeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB987878448511EF44686BA9 /* Pods_HeartBee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF204EB4B22342A3C5A294B /* Pods_HeartBeeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D01AFE284306D2E0725D24 /* Pods_HeartBeeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AAB9EADC34B899C58338AB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A02492B8CA14371F38F3D763 /* Pods-HeartBee.debug.xcconfig */,
+				87E389F0B1A9042EF0824D2F /* Pods-HeartBee.release.xcconfig */,
+				141CA1A959567CC381312BD5 /* Pods-HeartBeeTests.debug.xcconfig */,
+				4ABEF8626EFAABC2765AB72C /* Pods-HeartBeeTests.release.xcconfig */,
+				AD04D63EB0E79C364BA32983 /* Pods-HeartBeeUITests.debug.xcconfig */,
+				C8EC7789AB8F744504C4F4C1 /* Pods-HeartBeeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A62DF28D210E16B5009482A9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				A62DF2AF210E16B8009482A9 /* HeartBeeTests */,
 				A62DF2BA210E16B8009482A9 /* HeartBeeUITests */,
 				A62DF297210E16B5009482A9 /* Products */,
+				4AAB9EADC34B899C58338AB6 /* Pods */,
+				CCA93BF12D2947C054BD6809 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +134,11 @@
 			isa = PBXGroup;
 			children = (
 				A62DF299210E16B5009482A9 /* AppDelegate.swift */,
-				A62DF29B210E16B5009482A9 /* FirstViewController.swift */,
-				A62DF29D210E16B5009482A9 /* SecondViewController.swift */,
+				A62DF29B210E16B5009482A9 /* HeartRateViewController.swift */,
+				A62DF29D210E16B5009482A9 /* AgoraViewController.swift */,
 				A62DF29F210E16B5009482A9 /* Main.storyboard */,
+				A62DF2CE210E2C93009482A9 /* RankViewController.swift */,
+				A62DF2CC210E1DF3009482A9 /* MapViewController.swift */,
 				A62DF2A2210E16B8009482A9 /* Assets.xcassets */,
 				A62DF2A4210E16B8009482A9 /* LaunchScreen.storyboard */,
 				A62DF2A7210E16B8009482A9 /* Info.plist */,
@@ -128,6 +164,16 @@
 			path = HeartBeeUITests;
 			sourceTree = "<group>";
 		};
+		CCA93BF12D2947C054BD6809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEBF20223EFDC26D859010D4 /* Pods_HeartBee.framework */,
+				AF4D99E4A320905A92A92BAE /* Pods_HeartBeeTests.framework */,
+				E73988A70D733578E0852DDF /* Pods_HeartBeeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62DF2C0210E16B8009482A9 /* Build configuration list for PBXNativeTarget "HeartBee" */;
 			buildPhases = (
+				BC79461D47C20E3E0C84E4FE /* [CP] Check Pods Manifest.lock */,
 				A62DF292210E16B5009482A9 /* Sources */,
 				A62DF293210E16B5009482A9 /* Frameworks */,
 				A62DF294210E16B5009482A9 /* Resources */,
+				9E5A05B80A998BC2E5A85609 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62DF2C3210E16B8009482A9 /* Build configuration list for PBXNativeTarget "HeartBeeTests" */;
 			buildPhases = (
+				EA2A22697B940FA785F9EC31 /* [CP] Check Pods Manifest.lock */,
 				A62DF2A8210E16B8009482A9 /* Sources */,
 				A62DF2A9210E16B8009482A9 /* Frameworks */,
 				A62DF2AA210E16B8009482A9 /* Resources */,
@@ -170,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62DF2C6210E16B8009482A9 /* Build configuration list for PBXNativeTarget "HeartBeeUITests" */;
 			buildPhases = (
+				E67B4C2C2E1784C1EB2C6740 /* [CP] Check Pods Manifest.lock */,
 				A62DF2B3210E16B8009482A9 /* Sources */,
 				A62DF2B4210E16B8009482A9 /* Frameworks */,
 				A62DF2B5210E16B8009482A9 /* Resources */,
@@ -254,14 +304,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9E5A05B80A998BC2E5A85609 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeartBee/Pods-HeartBee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HyperTrackCore/HyperTrackCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HyperTrackCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartBee/Pods-HeartBee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC79461D47C20E3E0C84E4FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartBee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E67B4C2C2E1784C1EB2C6740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartBeeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2A22697B940FA785F9EC31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartBeeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A62DF292210E16B5009482A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A62DF29E210E16B5009482A9 /* SecondViewController.swift in Sources */,
+				A62DF29E210E16B5009482A9 /* AgoraViewController.swift in Sources */,
 				A62DF29A210E16B5009482A9 /* AppDelegate.swift in Sources */,
-				A62DF29C210E16B5009482A9 /* FirstViewController.swift in Sources */,
+				A62DF29C210E16B5009482A9 /* HeartRateViewController.swift in Sources */,
+				A62DF2CF210E2C93009482A9 /* RankViewController.swift in Sources */,
+				A62DF2CD210E1DF3009482A9 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +559,13 @@
 		};
 		A62DF2C1210E16B8009482A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02492B8CA14371F38F3D763 /* Pods-HeartBee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZK4KNL696;
 				INFOPLIST_FILE = HeartBee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +579,13 @@
 		};
 		A62DF2C2210E16B8009482A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E389F0B1A9042EF0824D2F /* Pods-HeartBee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZK4KNL696;
 				INFOPLIST_FILE = HeartBee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +599,7 @@
 		};
 		A62DF2C4210E16B8009482A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141CA1A959567CC381312BD5 /* Pods-HeartBeeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +621,7 @@
 		};
 		A62DF2C5210E16B8009482A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABEF8626EFAABC2765AB72C /* Pods-HeartBeeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +643,7 @@
 		};
 		A62DF2C7210E16B8009482A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD04D63EB0E79C364BA32983 /* Pods-HeartBeeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +664,7 @@
 		};
 		A62DF2C8210E16B8009482A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8EC7789AB8F744504C4F4C1 /* Pods-HeartBeeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

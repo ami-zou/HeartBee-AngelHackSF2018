@@ -13,7 +13,7 @@
         <!--HeartRate-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" userLabel="HeartRate" customClass="FirstViewController" customModule="HeartBee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" userLabel="HeartRate" customClass="HeartRateViewController" customModule="HeartBee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
         <!--Map-->
         <scene sceneID="BEa-tX-T10">
             <objects>
-                <viewController id="Hes-aX-t4e" userLabel="Map" sceneMemberID="viewController">
+                <viewController id="Hes-aX-t4e" userLabel="Map" customClass="MapViewController" customModule="HeartBee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jxm-F2-kve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,12 +63,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hcl-m7-Gfv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hcl-m7-Gfv" firstAttribute="top" secondItem="jxm-F2-kve" secondAttribute="top" id="BmK-tr-efN"/>
+                            <constraint firstItem="Hcl-m7-Gfv" firstAttribute="trailing" secondItem="gSt-hL-z1n" secondAttribute="trailing" id="WM6-kB-YFE"/>
+                            <constraint firstItem="Hcl-m7-Gfv" firstAttribute="leading" secondItem="gSt-hL-z1n" secondAttribute="leading" id="cOn-dl-uU8"/>
+                            <constraint firstAttribute="bottom" secondItem="Hcl-m7-Gfv" secondAttribute="bottom" constant="47" id="kUJ-64-C4G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gSt-hL-z1n"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="lt1-kX-WFW" userLabel="Map"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="Hcl-m7-Gfv" id="25S-p6-bte"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1a-vA-pgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,7 +89,7 @@
         <!--Agora-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" userLabel="Agora" customClass="SecondViewController" customModule="HeartBee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="Agora" customClass="AgoraViewController" customModule="HeartBee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +146,7 @@
         <!--Rank-->
         <scene sceneID="ZnY-wo-yZF">
             <objects>
-                <viewController id="fHZ-wn-awb" userLabel="Rank" sceneMemberID="viewController">
+                <viewController id="fHZ-wn-awb" userLabel="Rank" customClass="RankViewController" customModule="HeartBee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HcN-u9-RIT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

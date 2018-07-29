@@ -1,0 +1,6 @@
+framework module Pods_HeartBee {
+  umbrella header "Pods-HeartBee-umbrella.h"
+
+  export *
+  module * { export * }
+}

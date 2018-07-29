@@ -1,0 +1,1308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B06CCA4FE9E408EEA56468F83F82BF /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A741C80B5F101A640FB303E18DE8257 /* Errors.swift */; };
+		0138F5C6A4BCE4DB33DA18D0DB592AE8 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75F6E6CC6AB2E5A36AA11B20FD56225 /* Throttler.swift */; };
+		01B59E8ECD2BFFEC1B47AA8D6E1B434F /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF52F0C14ECDDE647215FED534D6C3 /* DDAbstractDatabaseLogger.m */; };
+		01B996BE77472D3A686A11520A0D883E /* TaskCompletionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C3909C563400A8E980D58851476265 /* TaskCompletionSource.swift */; };
+		0369B3C046FCE30D7539B2C644D7B25C /* ServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F455129B997450A185AF125828CB4 /* ServiceProtocols.swift */; };
+		0748DEB29FE6703FA189AC412A4186D4 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C9D7247D7FA53E499ADB0F3A2E0B7 /* DDLog.m */; };
+		0863F52373DCEE15DF607D8092404D3A /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA57C8EDA57E971987EE5C787CA7A0D /* ConfigManager.swift */; };
+		0D228BC7C39CA0392E39231DB8B8C9C4 /* FileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C0E601FDA8AF3901070079D80EF085 /* FileStore.swift */; };
+		105CB84E0078A488337BCA77AB88D8DE /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E33DAF0E3CF5D2088CC0791E49D1C8C5 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10B83B3FC044122CC65F1C8D13BFF37F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E309A52AED427491D08F28420A48E41 /* Response.swift */; };
+		11A420D1533DF3D38D019C8802669E01 /* PrivacyDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC133C37F0013FF089E0C9028C44FAA0 /* PrivacyDataTypes.swift */; };
+		11ACABB4CD290F5EC51784C947950D2F /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B2FE2264140F941304AC426084C9E2 /* DeviceInfo.swift */; };
+		145E84BDA952D0A98398786EF98CF79F /* ActivityServiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F12BCD1D1948B699A7F2B81B4EAEB /* ActivityServiceData.swift */; };
+		17BF5247C62641EAADC61F2E34967A12 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = D23AE1E5C2BB43252EDA2D398AD2CBA2 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18A05A8B96D4F78CF252AB18B41D0691 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F42CC31150EC6BE7EF64D533C46E53C /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		198180A938981CA931D6A1F602FBB1F5 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EBD87E3A4FBAD56EACB5D6D12C4FA /* Debouncer.swift */; };
+		1CA92A55AFE54317B883D2C1DF8C6372 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D907CA99216C1B9DDA56BE8E711D562 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D7AC0B904F3FEABA5BBC9FD19E865DC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E39E66791E79F92D112634B05286CD60 /* FMDatabasePool.m */; };
+		1DF0BB95EE97ECF361C2E2E974480FDA /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA20BB7B5B53ED21598D42379037630E /* Dispatch.swift */; };
+		20F5967587BFDB39A243D4EA06553D07 /* InitializationPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F000E32D087D3879870B102EF924B1 /* InitializationPipeline.swift */; };
+		212B9ACF5F3DC24A3D870460F245D74F /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB7D3DCE8AC98A0A514A9DDB394455E /* DDASLLogCapture.m */; };
+		2250C2F8EABCE78B4A14D731A5024F55 /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = C789D7C1C46CC66EB2F6EE6E934B0FBF /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2279FCD1D033489F98E8048F203E7FFE /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C7A39478F2F882732F74D67FA9B74 /* LocationService.swift */; };
+		23489C1218825B0E77E538FCA44DACDC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AE802A3E77B6043A6EA5EB3D53D0D4 /* Reachability.m */; };
+		24082C049664CF826650F4C155978D48 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A045C8A90B78FEBD7D5FEF5103DF7A /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A62C51536189C4B4AB06B2605FE6B60 /* LocationServiceInitializationPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC07A8E38E69DECA7C302323F32B99 /* LocationServiceInitializationPipeline.swift */; };
+		2AE8B556ABF259585F906176783E5D81 /* HealthServiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F039F55658A41D7214442B70C508EF2 /* HealthServiceData.swift */; };
+		2B34FB82EFBA140D614E1D966D86BC93 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6A525602A861FB4710E28A7DC59B94 /* FMDatabaseAdditions.m */; };
+		3017DA663CC7079B7D5A5BD269D2B3E3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A57BAEB05B3EEE9483FA121D6F91F6BA /* FMDatabase.m */; };
+		3117547CD4C3726515FF4A7E06C4A03F /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C803FE19D4073D75B589523A79EBF27 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3370A4F6C326DE5E3427BAE3DF2D71AB /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A8B45351149E70E3FB7F44AE7F21C /* LocationData.swift */; };
+		346D230D8DC3009796F88C9649014B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		357D6405A5BC7EE32D735B9A144F1521 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FDBBDC1285E27AED45161A4404A384 /* APIEndpoint.swift */; };
+		36FFE6FCB51ECA0E52CB2978406511EC /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F9F04C25206B9BA43390AA7ADDA5F0 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A523136CB843103114730EA220F4C8 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC15A8E881C20DB9219E16472136F4C /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		394D7DD9A19EA5C614B752AA9D360912 /* CocoaLumberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F38DA3446018AA6A949281A7B323C4 /* CocoaLumberjack.swift */; };
+		3C3FAE457095B36FF0BDD7D98351981D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 058AE5EA363DF5A795CA2036AF75D79B /* FMResultSet.m */; };
+		3E2B661FF858013EFADE281090628F7A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744AE0EFB13EB02AF9B1C003FA7137CF /* Task.swift */; };
+		4AC54AB20A4E96E73B88929092AF64BF /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEF9AB19D3FBFFF8B46EBFD6215E22 /* Executor.swift */; };
+		4C789A2E7F481C8FB3FAD3C718609AB1 /* FMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF0870D85B98F3EDCFA9D40F5841191 /* FMDBManager.swift */; };
+		4CED8E9CB584BBA406B02870B3885F7C /* Task+WhenAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFCB7BE3F2C7B03B1AAF7F0453E4534 /* Task+WhenAny.swift */; };
+		53D38611140E8F4D2E32FCAC7B175C25 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D48F716DB7098EB277A479941BAB529 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5653725351B5C474DB355C2327BD8154 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC6C670E9C9D6AAFB6232B5205E58C /* DataStore.swift */; };
+		5660458AE56A0BB0FFD85AD7D649E4B6 /* Pods-HeartBee-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 689ADE73D020294F6DE079489B6F9BAA /* Pods-HeartBee-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C4A98DEEF47034F2AF82D77CCE08F40 /* HeartbeatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF81F94969E5D8223A44F95194E802 /* HeartbeatService.swift */; };
+		622BBE78ABC3E8E7290984BD9B7F1B9A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D577DEE886B37222FC5ED44D73AAC /* Request.swift */; };
+		64D2D5B0F00CBF3BB437F6592C4F3CF0 /* HyperTrackCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D32585C021A5214DF67B2C92E08FF /* HyperTrackCore-dummy.m */; };
+		691E101538A0D4E02E0DCA620885D1AC /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522235246D8D1C5E9990F4DBD3BEBFC /* FoundationExtensions.swift */; };
+		6BCC3F29A48633111B3125F07F7FD86F /* ActivityServiceInitializationPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11699A0EFD88E83367E897C11E7FAF /* ActivityServiceInitializationPipeline.swift */; };
+		6F1444B75FF2CB3A924C8BC4F223A17C /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = D24AB379E4F9C03103A71D35DC1F7857 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7869FD67749BAB61BA02FF36FECBDBEA /* Pods-HeartBeeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFEE55B60FCDEA6A962275AE90CDF00 /* Pods-HeartBeeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79DA6023F47912654DED3669F8D29D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		7B0DBDBB621B0BA2F2BC14E30F43A3A5 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B43127D2E0A75F98D6C072F1DE998FE /* ApiRouter.swift */; };
+		7B73B34264C4399309DAC181263C938B /* Repeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BEE5ACA716F7804C70C43B58415298 /* Repeater.swift */; };
+		7CB172390046B81D8B1EB0A1894BCCD5 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324EC7CF277901E34B648B294BA72D95 /* ServiceManager.swift */; };
+		7F689A61AC270498A40E1642B51F12C7 /* AbstractEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE598EA3942394C2BE64B365B448E895 /* AbstractEventBus.swift */; };
+		80B927F9404B6922F722D0089523FFD0 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A0444BD7DBE22F4BC0FF2C2834CB8961 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80E8CEBA01017795E6B737F479305E01 /* CollectionPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E85DECF17C61B7B3D2CCF0B3DF70697 /* CollectionPipeline.swift */; };
+		8125811D0A125D4E65AE3CC804F8C322 /* HeartbeatRepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E2CC706687A263E2D35490C0CD000 /* HeartbeatRepeatingTimer.swift */; };
+		85ED4440C36772989E2DB92394BA7A71 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = F72620142800F876AF5E4E1A8329B508 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		884474B78E50F39622121BD8A5C09301 /* HeartbeatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D781A874419CBC4EDC568C01663B9143 /* HeartbeatInfo.swift */; };
+		8BA945A2A061D497CC081F2120159CF4 /* HyperTrackCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C9359EF801A93AE922E1F9B2F32BF2 /* HyperTrackCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD03D2ABFB52E2D4EE2133F70193F79 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E630FD81B395A6F35DAB4A3649365E /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		989A9DAABE1FA74345D8DCAD7AFCEA5C /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2A3673D4B38074FD0D4B1D32D12FD /* HealthService.swift */; };
+		98A72E6E8C1A41AEDC76CB902AF9D940 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C62337E7DF7A3F9C4A6B28D2B84EC905 /* FMDatabaseQueue.m */; };
+		A4DFA27192880A0E966F4B2D4089544B /* Task+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE02A2D67CDFC539A117C2AB4AD013 /* Task+Delay.swift */; };
+		A645D4F594501CE0A617086DC4B52202 /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37579751807ED3455F7FBC811C78BF /* CoreError.swift */; };
+		A76F69C2B6707EA4AD07DD6B805838DB /* AtomicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C360B5CF834133A3C6CB4C5A21DC82B /* AtomicValue.swift */; };
+		A881BFCF78F7AE637FE793D8D5F41ECE /* Pods-HeartBee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B51828822538D2309E6CF41CFA3532C2 /* Pods-HeartBee-dummy.m */; };
+		A957C8683B768040EB83D9A4359153BF /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107538B66762065A5B270D74E67CCBCC /* ActivityService.swift */; };
+		B60A260B71FABCAA332D51C1FAC2AB14 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB542094310E2A65FFF7C4FB0DF3A3D /* Event.swift */; };
+		B8184782E519CE4CF00B63A44ABA0C70 /* Task+ContinueWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEEA8B9683A9119FCAD3A1D83E86F1E /* Task+ContinueWith.swift */; };
+		BE3CBA92CC202C6EAA400F68CB5B5501 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FCF87CC93E18745CA02A090B3DED059 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C036B3B56D04F941C61BC1ABF41CA99B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B970B4567BC1496641794FA7BE08F /* AuthManager.swift */; };
+		C41C996E80E8DFEA44CF39A8C8C6D5EC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13174E18A261C4CE8284CF10DE36A8B /* DatabaseManager.swift */; };
+		C5A9D9F53DBDC143A1EDFAC6E97C2930 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B580910D913B5123C9E60E68354B21 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5D960BD43C215B51EEF7DA50400BF01 /* DDAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54492E9D9C7F0335C58107F715C70EB /* DDAssert.swift */; };
+		C79A993EC9D08C92D6C472A78398AF9B /* Pods-HeartBeeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD94D414714DF1F9E1E201919A47662 /* Pods-HeartBeeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0D146A6A248C18E8EEF426D4E6F9167 /* HyperTrackCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EF44F7294A0E9C0DF1C19CA595286AE /* HyperTrackCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5A5A34FAB25CCCB4EAE5BAC443CB567 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605015DC99E3C45C2488BFA2D2E449E /* Constants.swift */; };
+		D825300614CF5AB80681C97486F57773 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DA6C0684B5160392315F18F6AD248 /* DatabaseProtocol.swift */; };
+		DC08AA6859532EFA759BF3A47C528515 /* HyperTrackCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA86857B9687DAD697E9EEAF02F522 /* HyperTrackCore.swift */; };
+		DC9AC7E3C193DADFC9183BEB09B2DD58 /* TransmissionPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AADAA062955B48E365CDF55E260D69D /* TransmissionPipeline.swift */; };
+		DCD2216A79374C662534E78AC6D033B5 /* PrivateDataAccessProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31857F8842ECE1524C12418B77ABFBA8 /* PrivateDataAccessProvider.swift */; };
+		DD3AC41A183F689660A5613CEE6F8750 /* Pods-HeartBeeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE2F639981551F24771B2D42BD2718C /* Pods-HeartBeeTests-dummy.m */; };
+		DDD34793B276600D4DF1A97CE0602A86 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BFC0A8AAD5A1331AC58ADECE5EF5ED /* DDTTYLogger.m */; };
+		DDE0EA2DBECFD5C038D501CA0B603A98 /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62AECF346CF2F1218B7E0EB36340945 /* CoreLocationManager.swift */; };
+		DFF257368A2DBCB7BA600956126DC3C2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8084F8B6C7B4D37AF54C7C6909D232AE /* AppState.swift */; };
+		E90CECCBFB0024BC722F8E91A0906EAC /* Task+WhenAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DD87D61DA771C7E12E30CB1361BF0 /* Task+WhenAll.swift */; };
+		EDFD3001A9C1400C33CC04B2B74F747A /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22EE39C674BE480E034F9FF8EDB997 /* Provider.swift */; };
+		EF134C5248488C86AF5A95653CC97E47 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 62322B4C8DCCF920E52D10E9258611E5 /* DDASLLogger.m */; };
+		EFEDAEB26CDA231D456A1D8A5410351F /* Pods-HeartBeeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0299BB286A3DE49F97D781E485B357F /* Pods-HeartBeeUITests-dummy.m */; };
+		F1BEDE9A9116CB3E6AB29A11F5835CEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F4C4CE7FF610D4B59FE6D5EFD5CCEEA6 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBA183A3443DB5C2CB9F7A55415C357 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6992C702DD65BFF4B7986F424FBAA8F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC47E915B46B9D643645B71797C845 /* Logger.swift */; };
+		F6D78EC9128889B3BBB55E7FD89DA89D /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA56C356BCCB08223F6A29172FC4F05 /* DDOSLogger.m */; };
+		F76D678D43931945CE2AF13EA95F8A1A /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B35E401B6F777D26D73B40D64E1D3151 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F77F736496CDD118580696697630E1A8 /* EventsFMDBDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D3AEB6F344A486CDC5F2E35522A9F /* EventsFMDBDatabaseManager.swift */; };
+		F7C83FF18EBA480A37F30E2B01F8852A /* PipelineSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C46412DB6B4CADF1B49F58666E072 /* PipelineSteps.swift */; };
+		F99B402FE7A0A6B83915113CB4155EE3 /* LastSessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320D46AF28A0C5614ED42FA95A962AB /* LastSessionInfo.swift */; };
+		FBC2D709843D2BB7475ACA9218259577 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = A391B0E1C5E040323A89390616BB5502 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC71B7203D03E7F3F7587B18FBA4D052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		FDB3DB35DACFC97B4802DB130EB4CB1A /* HeartbeatServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C4C25DDF87FAFDED5D663633813F83 /* HeartbeatServiceHandler.swift */; };
+		FE26E2F88AEDE63AD2B39FE39B73C31D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725A29430035F4817F3B7130C6FC871B /* APIClient.swift */; };
+		FFDD17559906F715B8AF5E601C1902D3 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5544A9474B7714FD2AE849DBB0443 /* DDFileLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		519156CEBC897DA639B9AF8B31155CFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F1BE19B59A6464D9DF8DE13026D3FC6;
+			remoteInfo = "Pods-HeartBee";
+		};
+		574F9587994CD7E04645ED4A3997777E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCBC1237E147A4641EDED448464A82A3;
+			remoteInfo = HyperTrackCore;
+		};
+		F7D81A52913B37263AED0C68377736DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F1BE19B59A6464D9DF8DE13026D3FC6;
+			remoteInfo = "Pods-HeartBee";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BBC260000D42C109477D262FD8A958 /* Pods-HeartBeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartBeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		03F000E32D087D3879870B102EF924B1 /* InitializationPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InitializationPipeline.swift; path = "core-ios-sdk/Pipelines/InitializationPipeline.swift"; sourceTree = "<group>"; };
+		058AE5EA363DF5A795CA2036AF75D79B /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "core-ios-sdk/Persistence/Database/FMDB/FMResultSet.m"; sourceTree = "<group>"; };
+		072B970B4567BC1496641794FA7BE08F /* AuthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = "core-ios-sdk/Auth/AuthManager.swift"; sourceTree = "<group>"; };
+		0BDF81F94969E5D8223A44F95194E802 /* HeartbeatService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatService.swift; path = "core-ios-sdk/Services/Heartbeat/HeartbeatService.swift"; sourceTree = "<group>"; };
+		0BF5D6FFD11A57DA88F1E1C18A17879E /* Pods-HeartBeeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeartBeeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0CFF52F0C14ECDDE647215FED534D6C3 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = "core-ios-sdk/Logging/CocoaLumberJack/DDAbstractDatabaseLogger.m"; sourceTree = "<group>"; };
+		0D48F716DB7098EB277A479941BAB529 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "core-ios-sdk/Persistence/Database/FMDB/FMDatabase.h"; sourceTree = "<group>"; };
+		0E309A52AED427491D08F28420A48E41 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = "core-ios-sdk/Networking/Response.swift"; sourceTree = "<group>"; };
+		0EBBF6F7902983F54B7910516E9EFCCA /* Pods-HeartBee-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartBee-acknowledgements.plist"; sourceTree = "<group>"; };
+		107538B66762065A5B270D74E67CCBCC /* ActivityService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityService.swift; path = "core-ios-sdk/Services/ActivityService/ActivityService.swift"; sourceTree = "<group>"; };
+		10C9359EF801A93AE922E1F9B2F32BF2 /* HyperTrackCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperTrackCore-umbrella.h"; sourceTree = "<group>"; };
+		11FE4E616D43832609FC342643EE596F /* Pods-HeartBee-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeartBee-acknowledgements.markdown"; sourceTree = "<group>"; };
+		143C7A39478F2F882732F74D67FA9B74 /* LocationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationService.swift; path = "core-ios-sdk/Services/Location/LocationService.swift"; sourceTree = "<group>"; };
+		15C3AAA24EB1BF9C8AE0D685D10BE6C0 /* Pods_HeartBeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeartBeeUITests.framework; path = "Pods-HeartBeeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FA86857B9687DAD697E9EEAF02F522 /* HyperTrackCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HyperTrackCore.swift; path = "core-ios-sdk/HyperTrackCore.swift"; sourceTree = "<group>"; };
+		1A741C80B5F101A640FB303E18DE8257 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = "core-ios-sdk/BoltsSwift/Errors.swift"; sourceTree = "<group>"; };
+		1AADAA062955B48E365CDF55E260D69D /* TransmissionPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransmissionPipeline.swift; path = "core-ios-sdk/Pipelines/TransmissionPipeline.swift"; sourceTree = "<group>"; };
+		1B43127D2E0A75F98D6C072F1DE998FE /* ApiRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApiRouter.swift; path = "core-ios-sdk/Networking/ApiRouter.swift"; sourceTree = "<group>"; };
+		1BC4A6B7AABFEDD28C80C5952C7A3256 /* Pods-HeartBeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartBeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		21C4C25DDF87FAFDED5D663633813F83 /* HeartbeatServiceHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatServiceHandler.swift; path = "core-ios-sdk/Services/Heartbeat/HeartbeatServiceHandler.swift"; sourceTree = "<group>"; };
+		2AFEE55B60FCDEA6A962275AE90CDF00 /* Pods-HeartBeeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeartBeeUITests-umbrella.h"; sourceTree = "<group>"; };
+		2C360B5CF834133A3C6CB4C5A21DC82B /* AtomicValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomicValue.swift; path = "core-ios-sdk/Models/AtomicValue.swift"; sourceTree = "<group>"; };
+		2CCC47E915B46B9D643645B71797C845 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = "core-ios-sdk/Logging/Logger.swift"; sourceTree = "<group>"; };
+		2D11699A0EFD88E83367E897C11E7FAF /* ActivityServiceInitializationPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityServiceInitializationPipeline.swift; path = "core-ios-sdk/Pipelines/ActivityServiceInitializationPipeline.swift"; sourceTree = "<group>"; };
+		2E85DECF17C61B7B3D2CCF0B3DF70697 /* CollectionPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionPipeline.swift; path = "core-ios-sdk/Pipelines/CollectionPipeline.swift"; sourceTree = "<group>"; };
+		31857F8842ECE1524C12418B77ABFBA8 /* PrivateDataAccessProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrivateDataAccessProvider.swift; path = "core-ios-sdk/Services/Permissions/PrivateDataAccessProvider.swift"; sourceTree = "<group>"; };
+		324EC7CF277901E34B648B294BA72D95 /* ServiceManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceManager.swift; path = "core-ios-sdk/Services/ServiceManager.swift"; sourceTree = "<group>"; };
+		39A0BD6A45E309C9D2E91E028A4B6FED /* HyperTrackCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperTrackCore-prefix.pch"; sourceTree = "<group>"; };
+		3ADBB6092599D55D2B07CA4DE40A87C9 /* Pods-HeartBee.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeartBee.modulemap"; sourceTree = "<group>"; };
+		3DBDED67E4C08890F9214E8082F9C759 /* Pods-HeartBeeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeartBeeTests-frameworks.sh"; sourceTree = "<group>"; };
+		4522235246D8D1C5E9990F4DBD3BEBFC /* FoundationExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationExtensions.swift; path = "core-ios-sdk/Utility/FoundationExtensions.swift"; sourceTree = "<group>"; };
+		4B6D32585C021A5214DF67B2C92E08FF /* HyperTrackCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HyperTrackCore-dummy.m"; sourceTree = "<group>"; };
+		4D907CA99216C1B9DDA56BE8E711D562 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDLegacyMacros.h"; sourceTree = "<group>"; };
+		4E7AC5F3CDCF68EBB85B43B15572441D /* Pods-HeartBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartBee.release.xcconfig"; sourceTree = "<group>"; };
+		53E630FD81B395A6F35DAB4A3649365E /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "core-ios-sdk/Logging/CocoaLumberJack/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		57FDBBDC1285E27AED45161A4404A384 /* APIEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIEndpoint.swift; path = "core-ios-sdk/Networking/APIEndpoint.swift"; sourceTree = "<group>"; };
+		58F9F04C25206B9BA43390AA7ADDA5F0 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDTTYLogger.h"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A8D577DEE886B37222FC5ED44D73AAC /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = "core-ios-sdk/Networking/Request.swift"; sourceTree = "<group>"; };
+		5AE2917EE7765C1BC147C3BEA4A063EE /* Pods_HeartBee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeartBee.framework; path = "Pods-HeartBee.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C803FE19D4073D75B589523A79EBF27 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "core-ios-sdk/Persistence/Database/FMDB/FMDatabaseQueue.h"; sourceTree = "<group>"; };
+		5F039F55658A41D7214442B70C508EF2 /* HealthServiceData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HealthServiceData.swift; path = "core-ios-sdk/Services/Health/HealthServiceData.swift"; sourceTree = "<group>"; };
+		61F38DA3446018AA6A949281A7B323C4 /* CocoaLumberjack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaLumberjack.swift; path = "core-ios-sdk/Logging/CocoaLumberJack/CocoaLumberjack.swift"; sourceTree = "<group>"; };
+		62322B4C8DCCF920E52D10E9258611E5 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = "core-ios-sdk/Logging/CocoaLumberJack/DDASLLogger.m"; sourceTree = "<group>"; };
+		6605015DC99E3C45C2488BFA2D2E449E /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "core-ios-sdk/Utility/Constants.swift"; sourceTree = "<group>"; };
+		663C46412DB6B4CADF1B49F58666E072 /* PipelineSteps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipelineSteps.swift; path = "core-ios-sdk/Pipelines/PipelineSteps.swift"; sourceTree = "<group>"; };
+		6714A2742F71FB1BDFE12C7E22D57B8D /* Pods-HeartBeeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeartBeeUITests-resources.sh"; sourceTree = "<group>"; };
+		689ADE73D020294F6DE079489B6F9BAA /* Pods-HeartBee-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeartBee-umbrella.h"; sourceTree = "<group>"; };
+		692B855062CB0A39A7B9FBE98C2166CE /* Pods-HeartBeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartBeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6AFCB7BE3F2C7B03B1AAF7F0453E4534 /* Task+WhenAny.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Task+WhenAny.swift"; path = "core-ios-sdk/BoltsSwift/Task+WhenAny.swift"; sourceTree = "<group>"; };
+		6BA57C8EDA57E971987EE5C787CA7A0D /* ConfigManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigManager.swift; path = "core-ios-sdk/Config/ConfigManager.swift"; sourceTree = "<group>"; };
+		6BA71E546251B0E770D87B17BFD5015C /* Pods-HeartBeeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeartBeeTests.modulemap"; sourceTree = "<group>"; };
+		6CF3F1C58043E533A18555FF21D7D2F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF44F7294A0E9C0DF1C19CA595286AE /* HyperTrackCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HyperTrackCore.h; path = "core-ios-sdk/HyperTrackCore.h"; sourceTree = "<group>"; };
+		6F42CC31150EC6BE7EF64D533C46E53C /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDLogMacros.h"; sourceTree = "<group>"; };
+		6FB542094310E2A65FFF7C4FB0DF3A3D /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "core-ios-sdk/Models/Event.swift"; sourceTree = "<group>"; };
+		70F2A3673D4B38074FD0D4B1D32D12FD /* HealthService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HealthService.swift; path = "core-ios-sdk/Services/Health/HealthService.swift"; sourceTree = "<group>"; };
+		71FEF9AB19D3FBFFF8B46EBFD6215E22 /* Executor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Executor.swift; path = "core-ios-sdk/BoltsSwift/Executor.swift"; sourceTree = "<group>"; };
+		725A29430035F4817F3B7130C6FC871B /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = "core-ios-sdk/Networking/APIClient.swift"; sourceTree = "<group>"; };
+		7318BE64462AE79612838BF117C9A21E /* Pods-HeartBeeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeartBeeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		744AE0EFB13EB02AF9B1C003FA7137CF /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = "core-ios-sdk/BoltsSwift/Task.swift"; sourceTree = "<group>"; };
+		7A3E2CC706687A263E2D35490C0CD000 /* HeartbeatRepeatingTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatRepeatingTimer.swift; path = "core-ios-sdk/Services/Heartbeat/HeartbeatRepeatingTimer.swift"; sourceTree = "<group>"; };
+		7E74EEFA15B67885511B73A26AB4B038 /* Pods-HeartBee-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeartBee-frameworks.sh"; sourceTree = "<group>"; };
+		7FDDC18E3DC55BF16F219C55F2DB2FE8 /* Pods-HeartBeeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeartBeeUITests.modulemap"; sourceTree = "<group>"; };
+		8084F8B6C7B4D37AF54C7C6909D232AE /* AppState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = "core-ios-sdk/State/AppState.swift"; sourceTree = "<group>"; };
+		866B7F07219C10480F19F12F78B490EF /* Pods-HeartBeeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeartBeeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87BEE5ACA716F7804C70C43B58415298 /* Repeater.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeater.swift; path = "core-ios-sdk/Transmission/Repeater.swift"; sourceTree = "<group>"; };
+		8B5C9D7247D7FA53E499ADB0F3A2E0B7 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = "core-ios-sdk/Logging/CocoaLumberJack/DDLog.m"; sourceTree = "<group>"; };
+		8D489FE91925487206D4D06F0E4ABB96 /* HyperTrackCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HyperTrackCore.modulemap; sourceTree = "<group>"; };
+		8F37579751807ED3455F7FBC811C78BF /* CoreError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreError.swift; path = "core-ios-sdk/Networking/CoreError.swift"; sourceTree = "<group>"; };
+		908DD87D61DA771C7E12E30CB1361BF0 /* Task+WhenAll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Task+WhenAll.swift"; path = "core-ios-sdk/BoltsSwift/Task+WhenAll.swift"; sourceTree = "<group>"; };
+		9320D46AF28A0C5614ED42FA95A962AB /* LastSessionInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LastSessionInfo.swift; path = "core-ios-sdk/State/LastSessionInfo.swift"; sourceTree = "<group>"; };
+		93A045C8A90B78FEBD7D5FEF5103DF7A /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDAssertMacros.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C3909C563400A8E980D58851476265 /* TaskCompletionSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskCompletionSource.swift; path = "core-ios-sdk/BoltsSwift/TaskCompletionSource.swift"; sourceTree = "<group>"; };
+		94BD060BA201E7470F6ED931711F9E7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FE990AD771BC96FFB3CC2B4624DB38 /* Pods-HeartBeeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartBeeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		99AE802A3E77B6043A6EA5EB3D53D0D4 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "core-ios-sdk/Networking/Reachability.m"; sourceTree = "<group>"; };
+		9CDC07A8E38E69DECA7C302323F32B99 /* LocationServiceInitializationPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationServiceInitializationPipeline.swift; path = "core-ios-sdk/Pipelines/LocationServiceInitializationPipeline.swift"; sourceTree = "<group>"; };
+		9E1D3AEB6F344A486CDC5F2E35522A9F /* EventsFMDBDatabaseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventsFMDBDatabaseManager.swift; path = "core-ios-sdk/Persistence/Database/EventsFMDBDatabaseManager.swift"; sourceTree = "<group>"; };
+		9EF0870D85B98F3EDCFA9D40F5841191 /* FMDBManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMDBManager.swift; path = "core-ios-sdk/Persistence/Database/FMDBManager.swift"; sourceTree = "<group>"; };
+		9FCF87CC93E18745CA02A090B3DED059 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = "core-ios-sdk/Persistence/Database/FMDB/FMDB.h"; sourceTree = "<group>"; };
+		A0444BD7DBE22F4BC0FF2C2834CB8961 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDASLLogger.h"; sourceTree = "<group>"; };
+		A13174E18A261C4CE8284CF10DE36A8B /* DatabaseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = "core-ios-sdk/Persistence/Database/DatabaseManager.swift"; sourceTree = "<group>"; };
+		A391B0E1C5E040323A89390616BB5502 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "core-ios-sdk/Networking/Reachability.h"; sourceTree = "<group>"; };
+		A57BAEB05B3EEE9483FA121D6F91F6BA /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "core-ios-sdk/Persistence/Database/FMDB/FMDatabase.m"; sourceTree = "<group>"; };
+		A6A0B765A89E094862359F43CFD0437C /* Pods-HeartBeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartBeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A97F455129B997450A185AF125828CB4 /* ServiceProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceProtocols.swift; path = "core-ios-sdk/Services/ServiceProtocols.swift"; sourceTree = "<group>"; };
+		AEB7D3DCE8AC98A0A514A9DDB394455E /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = "core-ios-sdk/Logging/CocoaLumberJack/DDASLLogCapture.m"; sourceTree = "<group>"; };
+		B35E401B6F777D26D73B40D64E1D3151 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDLog.h"; sourceTree = "<group>"; };
+		B51828822538D2309E6CF41CFA3532C2 /* Pods-HeartBee-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeartBee-dummy.m"; sourceTree = "<group>"; };
+		B6F22367D53DA5431C2929F60A02B326 /* Pods_HeartBeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeartBeeTests.framework; path = "Pods-HeartBeeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA56C356BCCB08223F6A29172FC4F05 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = "core-ios-sdk/Logging/CocoaLumberJack/DDOSLogger.m"; sourceTree = "<group>"; };
+		BDEEA8B9683A9119FCAD3A1D83E86F1E /* Task+ContinueWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Task+ContinueWith.swift"; path = "core-ios-sdk/BoltsSwift/Task+ContinueWith.swift"; sourceTree = "<group>"; };
+		C01A7EC3B8F28AF5B57A65214D3FA485 /* HyperTrackCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HyperTrackCore.framework; path = HyperTrackCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32DA6C0684B5160392315F18F6AD248 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseProtocol.swift; path = "core-ios-sdk/Persistence/Database/DatabaseProtocol.swift"; sourceTree = "<group>"; };
+		C4EE02A2D67CDFC539A117C2AB4AD013 /* Task+Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Task+Delay.swift"; path = "core-ios-sdk/BoltsSwift/Task+Delay.swift"; sourceTree = "<group>"; };
+		C62337E7DF7A3F9C4A6B28D2B84EC905 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "core-ios-sdk/Persistence/Database/FMDB/FMDatabaseQueue.m"; sourceTree = "<group>"; };
+		C62AECF346CF2F1218B7E0EB36340945 /* CoreLocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreLocationManager.swift; path = "core-ios-sdk/Services/Location/CoreLocationManager.swift"; sourceTree = "<group>"; };
+		C789D7C1C46CC66EB2F6EE6E934B0FBF /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDOSLogger.h"; sourceTree = "<group>"; };
+		CC133C37F0013FF089E0C9028C44FAA0 /* PrivacyDataTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrivacyDataTypes.swift; path = "core-ios-sdk/Services/Permissions/PrivacyDataTypes.swift"; sourceTree = "<group>"; };
+		CE66C03CD77DB69A28DE5CAA3B746C37 /* Pods-HeartBee-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeartBee-resources.sh"; sourceTree = "<group>"; };
+		CFBD059D3826B8C94C6B41BB7DCA96E5 /* Pods-HeartBee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartBee.debug.xcconfig"; sourceTree = "<group>"; };
+		D23AE1E5C2BB43252EDA2D398AD2CBA2 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDAbstractDatabaseLogger.h"; sourceTree = "<group>"; };
+		D24AB379E4F9C03103A71D35DC1F7857 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "core-ios-sdk/Persistence/Database/FMDB/FMDatabasePool.h"; sourceTree = "<group>"; };
+		D54492E9D9C7F0335C58107F715C70EB /* DDAssert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDAssert.swift; path = "core-ios-sdk/Logging/CocoaLumberJack/DDAssert.swift"; sourceTree = "<group>"; };
+		D5453B58A414372FE46C56E1FF4F1EE9 /* Pods-HeartBeeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeartBeeTests-resources.sh"; sourceTree = "<group>"; };
+		D586B5B2500ACCFC015D96C1B93A3461 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D781A874419CBC4EDC568C01663B9143 /* HeartbeatInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatInfo.swift; path = "core-ios-sdk/Models/HeartbeatInfo.swift"; sourceTree = "<group>"; };
+		D8C0E601FDA8AF3901070079D80EF085 /* FileStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileStore.swift; path = "core-ios-sdk/Persistence/FileStore.swift"; sourceTree = "<group>"; };
+		DA7F12BCD1D1948B699A7F2B81B4EAEB /* ActivityServiceData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityServiceData.swift; path = "core-ios-sdk/Services/ActivityService/ActivityServiceData.swift"; sourceTree = "<group>"; };
+		DBD94D414714DF1F9E1E201919A47662 /* Pods-HeartBeeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeartBeeTests-umbrella.h"; sourceTree = "<group>"; };
+		DC06AD296DCD6481989D938C7E012D45 /* Pods-HeartBeeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartBeeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DC0EEEDB2B03A1995DF7D0057422CBD7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE598EA3942394C2BE64B365B448E895 /* AbstractEventBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AbstractEventBus.swift; path = "core-ios-sdk/EventBus/AbstractEventBus.swift"; sourceTree = "<group>"; };
+		DFBA183A3443DB5C2CB9F7A55415C357 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "core-ios-sdk/Persistence/Database/FMDB/FMResultSet.h"; sourceTree = "<group>"; };
+		E1B5544A9474B7714FD2AE849DBB0443 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = "core-ios-sdk/Logging/CocoaLumberJack/DDFileLogger.m"; sourceTree = "<group>"; };
+		E1B580910D913B5123C9E60E68354B21 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDASLLogCapture.h"; sourceTree = "<group>"; };
+		E1C0B0C38456AD11B2D2D0B75970F058 /* HyperTrackCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperTrackCore.xcconfig; sourceTree = "<group>"; };
+		E33DAF0E3CF5D2088CC0791E49D1C8C5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "core-ios-sdk/Persistence/Database/FMDB/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
+		E39E66791E79F92D112634B05286CD60 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "core-ios-sdk/Persistence/Database/FMDB/FMDatabasePool.m"; sourceTree = "<group>"; };
+		E8BFC0A8AAD5A1331AC58ADECE5EF5ED /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = "core-ios-sdk/Logging/CocoaLumberJack/DDTTYLogger.m"; sourceTree = "<group>"; };
+		EA20BB7B5B53ED21598D42379037630E /* Dispatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = "core-ios-sdk/Transmission/Dispatch.swift"; sourceTree = "<group>"; };
+		EA9EBD87E3A4FBAD56EACB5D6D12C4FA /* Debouncer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debouncer.swift; path = "core-ios-sdk/Transmission/Debouncer.swift"; sourceTree = "<group>"; };
+		EB22EE39C674BE480E034F9FF8EDB997 /* Provider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Provider.swift; path = "core-ios-sdk/Utility/Provider.swift"; sourceTree = "<group>"; };
+		EB4A8B45351149E70E3FB7F44AE7F21C /* LocationData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationData.swift; path = "core-ios-sdk/Services/Location/LocationData.swift"; sourceTree = "<group>"; };
+		F0299BB286A3DE49F97D781E485B357F /* Pods-HeartBeeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeartBeeUITests-dummy.m"; sourceTree = "<group>"; };
+		F6B2FE2264140F941304AC426084C9E2 /* DeviceInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceInfo.swift; path = "core-ios-sdk/Models/DeviceInfo.swift"; sourceTree = "<group>"; };
+		F6DC6C670E9C9D6AAFB6232B5205E58C /* DataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = "core-ios-sdk/Persistence/DataStore.swift"; sourceTree = "<group>"; };
+		F72620142800F876AF5E4E1A8329B508 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = "core-ios-sdk/Logging/CocoaLumberJack/CocoaLumberjack.h"; sourceTree = "<group>"; };
+		F75F6E6CC6AB2E5A36AA11B20FD56225 /* Throttler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Throttler.swift; path = "core-ios-sdk/Transmission/Throttler.swift"; sourceTree = "<group>"; };
+		FBE2F639981551F24771B2D42BD2718C /* Pods-HeartBeeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeartBeeTests-dummy.m"; sourceTree = "<group>"; };
+		FD6A525602A861FB4710E28A7DC59B94 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "core-ios-sdk/Persistence/Database/FMDB/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
+		FFC15A8E881C20DB9219E16472136F4C /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = "core-ios-sdk/Logging/CocoaLumberJack/DDFileLogger.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		440FE77EEE3F3A6CD1CC3CF526A3A7BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DA6023F47912654DED3669F8D29D85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA6DAD9040418E51402D99E6ADB41EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BEDE9A9116CB3E6AB29A11F5835CEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97DC502704D792AD1E869BE3B4E2C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346D230D8DC3009796F88C9649014B20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA94EBDD7FB736AB5DD1A8036D904E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC71B7203D03E7F3F7587B18FBA4D052 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BA7BEC7C47C6C6D478EE3DCE6EE67C0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				650F0E50DBBB20A4AF6F75E1B53301B8 /* Pods-HeartBee */,
+				C661D5E47F8ECBBAF87AB4977EEE5EDB /* Pods-HeartBeeTests */,
+				45FC66970AA182F69140AC9E5A1DD0E5 /* Pods-HeartBeeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0BE74B8454AD75B9465DD65E8C8DD055 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD6E02C1F5501E7CBDEC3A9CD8FB7460 /* HyperTrackCore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34EABCF7457DAB2DEF2C2D4B3BB3C4DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C01A7EC3B8F28AF5B57A65214D3FA485 /* HyperTrackCore.framework */,
+				5AE2917EE7765C1BC147C3BEA4A063EE /* Pods_HeartBee.framework */,
+				B6F22367D53DA5431C2929F60A02B326 /* Pods_HeartBeeTests.framework */,
+				15C3AAA24EB1BF9C8AE0D685D10BE6C0 /* Pods_HeartBeeUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45FC66970AA182F69140AC9E5A1DD0E5 /* Pods-HeartBeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94BD060BA201E7470F6ED931711F9E7F /* Info.plist */,
+				7FDDC18E3DC55BF16F219C55F2DB2FE8 /* Pods-HeartBeeUITests.modulemap */,
+				7318BE64462AE79612838BF117C9A21E /* Pods-HeartBeeUITests-acknowledgements.markdown */,
+				DC06AD296DCD6481989D938C7E012D45 /* Pods-HeartBeeUITests-acknowledgements.plist */,
+				F0299BB286A3DE49F97D781E485B357F /* Pods-HeartBeeUITests-dummy.m */,
+				0BF5D6FFD11A57DA88F1E1C18A17879E /* Pods-HeartBeeUITests-frameworks.sh */,
+				6714A2742F71FB1BDFE12C7E22D57B8D /* Pods-HeartBeeUITests-resources.sh */,
+				2AFEE55B60FCDEA6A962275AE90CDF00 /* Pods-HeartBeeUITests-umbrella.h */,
+				1BC4A6B7AABFEDD28C80C5952C7A3256 /* Pods-HeartBeeUITests.debug.xcconfig */,
+				692B855062CB0A39A7B9FBE98C2166CE /* Pods-HeartBeeUITests.release.xcconfig */,
+			);
+			name = "Pods-HeartBeeUITests";
+			path = "Target Support Files/Pods-HeartBeeUITests";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		650F0E50DBBB20A4AF6F75E1B53301B8 /* Pods-HeartBee */ = {
+			isa = PBXGroup;
+			children = (
+				6CF3F1C58043E533A18555FF21D7D2F1 /* Info.plist */,
+				3ADBB6092599D55D2B07CA4DE40A87C9 /* Pods-HeartBee.modulemap */,
+				11FE4E616D43832609FC342643EE596F /* Pods-HeartBee-acknowledgements.markdown */,
+				0EBBF6F7902983F54B7910516E9EFCCA /* Pods-HeartBee-acknowledgements.plist */,
+				B51828822538D2309E6CF41CFA3532C2 /* Pods-HeartBee-dummy.m */,
+				7E74EEFA15B67885511B73A26AB4B038 /* Pods-HeartBee-frameworks.sh */,
+				CE66C03CD77DB69A28DE5CAA3B746C37 /* Pods-HeartBee-resources.sh */,
+				689ADE73D020294F6DE079489B6F9BAA /* Pods-HeartBee-umbrella.h */,
+				CFBD059D3826B8C94C6B41BB7DCA96E5 /* Pods-HeartBee.debug.xcconfig */,
+				4E7AC5F3CDCF68EBB85B43B15572441D /* Pods-HeartBee.release.xcconfig */,
+			);
+			name = "Pods-HeartBee";
+			path = "Target Support Files/Pods-HeartBee";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0BE74B8454AD75B9465DD65E8C8DD055 /* Pods */,
+				34EABCF7457DAB2DEF2C2D4B3BB3C4DC /* Products */,
+				0BA7BEC7C47C6C6D478EE3DCE6EE67C0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C661D5E47F8ECBBAF87AB4977EEE5EDB /* Pods-HeartBeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D586B5B2500ACCFC015D96C1B93A3461 /* Info.plist */,
+				6BA71E546251B0E770D87B17BFD5015C /* Pods-HeartBeeTests.modulemap */,
+				866B7F07219C10480F19F12F78B490EF /* Pods-HeartBeeTests-acknowledgements.markdown */,
+				94FE990AD771BC96FFB3CC2B4624DB38 /* Pods-HeartBeeTests-acknowledgements.plist */,
+				FBE2F639981551F24771B2D42BD2718C /* Pods-HeartBeeTests-dummy.m */,
+				3DBDED67E4C08890F9214E8082F9C759 /* Pods-HeartBeeTests-frameworks.sh */,
+				D5453B58A414372FE46C56E1FF4F1EE9 /* Pods-HeartBeeTests-resources.sh */,
+				DBD94D414714DF1F9E1E201919A47662 /* Pods-HeartBeeTests-umbrella.h */,
+				01BBC260000D42C109477D262FD8A958 /* Pods-HeartBeeTests.debug.xcconfig */,
+				A6A0B765A89E094862359F43CFD0437C /* Pods-HeartBeeTests.release.xcconfig */,
+			);
+			name = "Pods-HeartBeeTests";
+			path = "Target Support Files/Pods-HeartBeeTests";
+			sourceTree = "<group>";
+		};
+		F4384CFF8323BBF1DB96CC2BCBD00768 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D489FE91925487206D4D06F0E4ABB96 /* HyperTrackCore.modulemap */,
+				E1C0B0C38456AD11B2D2D0B75970F058 /* HyperTrackCore.xcconfig */,
+				4B6D32585C021A5214DF67B2C92E08FF /* HyperTrackCore-dummy.m */,
+				39A0BD6A45E309C9D2E91E028A4B6FED /* HyperTrackCore-prefix.pch */,
+				10C9359EF801A93AE922E1F9B2F32BF2 /* HyperTrackCore-umbrella.h */,
+				DC0EEEDB2B03A1995DF7D0057422CBD7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HyperTrackCore";
+			sourceTree = "<group>";
+		};
+		FD6E02C1F5501E7CBDEC3A9CD8FB7460 /* HyperTrackCore */ = {
+			isa = PBXGroup;
+			children = (
+				DE598EA3942394C2BE64B365B448E895 /* AbstractEventBus.swift */,
+				107538B66762065A5B270D74E67CCBCC /* ActivityService.swift */,
+				DA7F12BCD1D1948B699A7F2B81B4EAEB /* ActivityServiceData.swift */,
+				2D11699A0EFD88E83367E897C11E7FAF /* ActivityServiceInitializationPipeline.swift */,
+				725A29430035F4817F3B7130C6FC871B /* APIClient.swift */,
+				57FDBBDC1285E27AED45161A4404A384 /* APIEndpoint.swift */,
+				1B43127D2E0A75F98D6C072F1DE998FE /* ApiRouter.swift */,
+				8084F8B6C7B4D37AF54C7C6909D232AE /* AppState.swift */,
+				2C360B5CF834133A3C6CB4C5A21DC82B /* AtomicValue.swift */,
+				072B970B4567BC1496641794FA7BE08F /* AuthManager.swift */,
+				F72620142800F876AF5E4E1A8329B508 /* CocoaLumberjack.h */,
+				61F38DA3446018AA6A949281A7B323C4 /* CocoaLumberjack.swift */,
+				2E85DECF17C61B7B3D2CCF0B3DF70697 /* CollectionPipeline.swift */,
+				6BA57C8EDA57E971987EE5C787CA7A0D /* ConfigManager.swift */,
+				6605015DC99E3C45C2488BFA2D2E449E /* Constants.swift */,
+				8F37579751807ED3455F7FBC811C78BF /* CoreError.swift */,
+				C62AECF346CF2F1218B7E0EB36340945 /* CoreLocationManager.swift */,
+				A13174E18A261C4CE8284CF10DE36A8B /* DatabaseManager.swift */,
+				C32DA6C0684B5160392315F18F6AD248 /* DatabaseProtocol.swift */,
+				F6DC6C670E9C9D6AAFB6232B5205E58C /* DataStore.swift */,
+				D23AE1E5C2BB43252EDA2D398AD2CBA2 /* DDAbstractDatabaseLogger.h */,
+				0CFF52F0C14ECDDE647215FED534D6C3 /* DDAbstractDatabaseLogger.m */,
+				E1B580910D913B5123C9E60E68354B21 /* DDASLLogCapture.h */,
+				AEB7D3DCE8AC98A0A514A9DDB394455E /* DDASLLogCapture.m */,
+				A0444BD7DBE22F4BC0FF2C2834CB8961 /* DDASLLogger.h */,
+				62322B4C8DCCF920E52D10E9258611E5 /* DDASLLogger.m */,
+				D54492E9D9C7F0335C58107F715C70EB /* DDAssert.swift */,
+				93A045C8A90B78FEBD7D5FEF5103DF7A /* DDAssertMacros.h */,
+				FFC15A8E881C20DB9219E16472136F4C /* DDFileLogger.h */,
+				E1B5544A9474B7714FD2AE849DBB0443 /* DDFileLogger.m */,
+				4D907CA99216C1B9DDA56BE8E711D562 /* DDLegacyMacros.h */,
+				B35E401B6F777D26D73B40D64E1D3151 /* DDLog.h */,
+				8B5C9D7247D7FA53E499ADB0F3A2E0B7 /* DDLog.m */,
+				53E630FD81B395A6F35DAB4A3649365E /* DDLog+LOGV.h */,
+				6F42CC31150EC6BE7EF64D533C46E53C /* DDLogMacros.h */,
+				C789D7C1C46CC66EB2F6EE6E934B0FBF /* DDOSLogger.h */,
+				BBA56C356BCCB08223F6A29172FC4F05 /* DDOSLogger.m */,
+				58F9F04C25206B9BA43390AA7ADDA5F0 /* DDTTYLogger.h */,
+				E8BFC0A8AAD5A1331AC58ADECE5EF5ED /* DDTTYLogger.m */,
+				EA9EBD87E3A4FBAD56EACB5D6D12C4FA /* Debouncer.swift */,
+				F6B2FE2264140F941304AC426084C9E2 /* DeviceInfo.swift */,
+				EA20BB7B5B53ED21598D42379037630E /* Dispatch.swift */,
+				1A741C80B5F101A640FB303E18DE8257 /* Errors.swift */,
+				6FB542094310E2A65FFF7C4FB0DF3A3D /* Event.swift */,
+				9E1D3AEB6F344A486CDC5F2E35522A9F /* EventsFMDBDatabaseManager.swift */,
+				71FEF9AB19D3FBFFF8B46EBFD6215E22 /* Executor.swift */,
+				D8C0E601FDA8AF3901070079D80EF085 /* FileStore.swift */,
+				0D48F716DB7098EB277A479941BAB529 /* FMDatabase.h */,
+				A57BAEB05B3EEE9483FA121D6F91F6BA /* FMDatabase.m */,
+				E33DAF0E3CF5D2088CC0791E49D1C8C5 /* FMDatabaseAdditions.h */,
+				FD6A525602A861FB4710E28A7DC59B94 /* FMDatabaseAdditions.m */,
+				D24AB379E4F9C03103A71D35DC1F7857 /* FMDatabasePool.h */,
+				E39E66791E79F92D112634B05286CD60 /* FMDatabasePool.m */,
+				5C803FE19D4073D75B589523A79EBF27 /* FMDatabaseQueue.h */,
+				C62337E7DF7A3F9C4A6B28D2B84EC905 /* FMDatabaseQueue.m */,
+				9FCF87CC93E18745CA02A090B3DED059 /* FMDB.h */,
+				9EF0870D85B98F3EDCFA9D40F5841191 /* FMDBManager.swift */,
+				DFBA183A3443DB5C2CB9F7A55415C357 /* FMResultSet.h */,
+				058AE5EA363DF5A795CA2036AF75D79B /* FMResultSet.m */,
+				4522235246D8D1C5E9990F4DBD3BEBFC /* FoundationExtensions.swift */,
+				70F2A3673D4B38074FD0D4B1D32D12FD /* HealthService.swift */,
+				5F039F55658A41D7214442B70C508EF2 /* HealthServiceData.swift */,
+				D781A874419CBC4EDC568C01663B9143 /* HeartbeatInfo.swift */,
+				7A3E2CC706687A263E2D35490C0CD000 /* HeartbeatRepeatingTimer.swift */,
+				0BDF81F94969E5D8223A44F95194E802 /* HeartbeatService.swift */,
+				21C4C25DDF87FAFDED5D663633813F83 /* HeartbeatServiceHandler.swift */,
+				6EF44F7294A0E9C0DF1C19CA595286AE /* HyperTrackCore.h */,
+				16FA86857B9687DAD697E9EEAF02F522 /* HyperTrackCore.swift */,
+				03F000E32D087D3879870B102EF924B1 /* InitializationPipeline.swift */,
+				9320D46AF28A0C5614ED42FA95A962AB /* LastSessionInfo.swift */,
+				EB4A8B45351149E70E3FB7F44AE7F21C /* LocationData.swift */,
+				143C7A39478F2F882732F74D67FA9B74 /* LocationService.swift */,
+				9CDC07A8E38E69DECA7C302323F32B99 /* LocationServiceInitializationPipeline.swift */,
+				2CCC47E915B46B9D643645B71797C845 /* Logger.swift */,
+				663C46412DB6B4CADF1B49F58666E072 /* PipelineSteps.swift */,
+				CC133C37F0013FF089E0C9028C44FAA0 /* PrivacyDataTypes.swift */,
+				31857F8842ECE1524C12418B77ABFBA8 /* PrivateDataAccessProvider.swift */,
+				EB22EE39C674BE480E034F9FF8EDB997 /* Provider.swift */,
+				A391B0E1C5E040323A89390616BB5502 /* Reachability.h */,
+				99AE802A3E77B6043A6EA5EB3D53D0D4 /* Reachability.m */,
+				87BEE5ACA716F7804C70C43B58415298 /* Repeater.swift */,
+				5A8D577DEE886B37222FC5ED44D73AAC /* Request.swift */,
+				0E309A52AED427491D08F28420A48E41 /* Response.swift */,
+				324EC7CF277901E34B648B294BA72D95 /* ServiceManager.swift */,
+				A97F455129B997450A185AF125828CB4 /* ServiceProtocols.swift */,
+				744AE0EFB13EB02AF9B1C003FA7137CF /* Task.swift */,
+				BDEEA8B9683A9119FCAD3A1D83E86F1E /* Task+ContinueWith.swift */,
+				C4EE02A2D67CDFC539A117C2AB4AD013 /* Task+Delay.swift */,
+				908DD87D61DA771C7E12E30CB1361BF0 /* Task+WhenAll.swift */,
+				6AFCB7BE3F2C7B03B1AAF7F0453E4534 /* Task+WhenAny.swift */,
+				93C3909C563400A8E980D58851476265 /* TaskCompletionSource.swift */,
+				F75F6E6CC6AB2E5A36AA11B20FD56225 /* Throttler.swift */,
+				1AADAA062955B48E365CDF55E260D69D /* TransmissionPipeline.swift */,
+				F4384CFF8323BBF1DB96CC2BCBD00768 /* Support Files */,
+			);
+			name = HyperTrackCore;
+			path = HyperTrackCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2F5B0E71146DDBBAD1C14BA41F217ADC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79A993EC9D08C92D6C472A78398AF9B /* Pods-HeartBeeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FC3FC8A782BBF508E0865C31FA18C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5660458AE56A0BB0FFD85AD7D649E4B6 /* Pods-HeartBee-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5359185006B74B8C3CD71F4D5B885F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7869FD67749BAB61BA02FF36FECBDBEA /* Pods-HeartBeeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA471252C76E31CBBE60177DDD95715 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85ED4440C36772989E2DB92394BA7A71 /* CocoaLumberjack.h in Headers */,
+				17BF5247C62641EAADC61F2E34967A12 /* DDAbstractDatabaseLogger.h in Headers */,
+				C5A9D9F53DBDC143A1EDFAC6E97C2930 /* DDASLLogCapture.h in Headers */,
+				80B927F9404B6922F722D0089523FFD0 /* DDASLLogger.h in Headers */,
+				24082C049664CF826650F4C155978D48 /* DDAssertMacros.h in Headers */,
+				37A523136CB843103114730EA220F4C8 /* DDFileLogger.h in Headers */,
+				1CA92A55AFE54317B883D2C1DF8C6372 /* DDLegacyMacros.h in Headers */,
+				8DD03D2ABFB52E2D4EE2133F70193F79 /* DDLog+LOGV.h in Headers */,
+				F76D678D43931945CE2AF13EA95F8A1A /* DDLog.h in Headers */,
+				18A05A8B96D4F78CF252AB18B41D0691 /* DDLogMacros.h in Headers */,
+				2250C2F8EABCE78B4A14D731A5024F55 /* DDOSLogger.h in Headers */,
+				36FFE6FCB51ECA0E52CB2978406511EC /* DDTTYLogger.h in Headers */,
+				53D38611140E8F4D2E32FCAC7B175C25 /* FMDatabase.h in Headers */,
+				105CB84E0078A488337BCA77AB88D8DE /* FMDatabaseAdditions.h in Headers */,
+				6F1444B75FF2CB3A924C8BC4F223A17C /* FMDatabasePool.h in Headers */,
+				3117547CD4C3726515FF4A7E06C4A03F /* FMDatabaseQueue.h in Headers */,
+				BE3CBA92CC202C6EAA400F68CB5B5501 /* FMDB.h in Headers */,
+				F4C4CE7FF610D4B59FE6D5EFD5CCEEA6 /* FMResultSet.h in Headers */,
+				8BA945A2A061D497CC081F2120159CF4 /* HyperTrackCore-umbrella.h in Headers */,
+				D0D146A6A248C18E8EEF426D4E6F9167 /* HyperTrackCore.h in Headers */,
+				FBC2D709843D2BB7475ACA9218259577 /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7F1BE19B59A6464D9DF8DE13026D3FC6 /* Pods-HeartBee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F6B5C7B953DA482D9A6131E1A0865F9 /* Build configuration list for PBXNativeTarget "Pods-HeartBee" */;
+			buildPhases = (
+				391C9BA12D7470432A99491974789C61 /* Sources */,
+				C97DC502704D792AD1E869BE3B4E2C8C /* Frameworks */,
+				61FC3FC8A782BBF508E0865C31FA18C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DAB62A59B01ED96B067731EF240D09 /* PBXTargetDependency */,
+			);
+			name = "Pods-HeartBee";
+			productName = "Pods-HeartBee";
+			productReference = 5AE2917EE7765C1BC147C3BEA4A063EE /* Pods_HeartBee.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CB1B64693B6C8B81C4ABB56445D5FFF /* Pods-HeartBeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9E73BA627946E7311FCC9834CEF6B5E /* Build configuration list for PBXNativeTarget "Pods-HeartBeeUITests" */;
+			buildPhases = (
+				77FCC2640413D7F4A757469A6C763B7A /* Sources */,
+				440FE77EEE3F3A6CD1CC3CF526A3A7BE /* Frameworks */,
+				A5359185006B74B8C3CD71F4D5B885F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6309B2CFABF5B00167D60E936EA00A1 /* PBXTargetDependency */,
+			);
+			name = "Pods-HeartBeeUITests";
+			productName = "Pods-HeartBeeUITests";
+			productReference = 15C3AAA24EB1BF9C8AE0D685D10BE6C0 /* Pods_HeartBeeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1F3229A675BA8F1573A12F43C8743C3 /* Pods-HeartBeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761A8CF88590CE229D4442AA914A1A09 /* Build configuration list for PBXNativeTarget "Pods-HeartBeeTests" */;
+			buildPhases = (
+				601F65AF08724424576FB2BA41DE5911 /* Sources */,
+				EA94EBDD7FB736AB5DD1A8036D904E1C /* Frameworks */,
+				2F5B0E71146DDBBAD1C14BA41F217ADC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C074A046EE74F1BB2742EB461EC0CEF /* PBXTargetDependency */,
+			);
+			name = "Pods-HeartBeeTests";
+			productName = "Pods-HeartBeeTests";
+			productReference = B6F22367D53DA5431C2929F60A02B326 /* Pods_HeartBeeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCBC1237E147A4641EDED448464A82A3 /* HyperTrackCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA79696BFEE55CA03C14CC7EC29AFA32 /* Build configuration list for PBXNativeTarget "HyperTrackCore" */;
+			buildPhases = (
+				0976753FEBD64AC7DAF77930A4328853 /* Sources */,
+				4AA6DAD9040418E51402D99E6ADB41EF /* Frameworks */,
+				BCA471252C76E31CBBE60177DDD95715 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HyperTrackCore;
+			productName = HyperTrackCore;
+			productReference = C01A7EC3B8F28AF5B57A65214D3FA485 /* HyperTrackCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 34EABCF7457DAB2DEF2C2D4B3BB3C4DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCBC1237E147A4641EDED448464A82A3 /* HyperTrackCore */,
+				7F1BE19B59A6464D9DF8DE13026D3FC6 /* Pods-HeartBee */,
+				C1F3229A675BA8F1573A12F43C8743C3 /* Pods-HeartBeeTests */,
+				8CB1B64693B6C8B81C4ABB56445D5FFF /* Pods-HeartBeeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0976753FEBD64AC7DAF77930A4328853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F689A61AC270498A40E1642B51F12C7 /* AbstractEventBus.swift in Sources */,
+				A957C8683B768040EB83D9A4359153BF /* ActivityService.swift in Sources */,
+				145E84BDA952D0A98398786EF98CF79F /* ActivityServiceData.swift in Sources */,
+				6BCC3F29A48633111B3125F07F7FD86F /* ActivityServiceInitializationPipeline.swift in Sources */,
+				FE26E2F88AEDE63AD2B39FE39B73C31D /* APIClient.swift in Sources */,
+				357D6405A5BC7EE32D735B9A144F1521 /* APIEndpoint.swift in Sources */,
+				7B0DBDBB621B0BA2F2BC14E30F43A3A5 /* ApiRouter.swift in Sources */,
+				DFF257368A2DBCB7BA600956126DC3C2 /* AppState.swift in Sources */,
+				A76F69C2B6707EA4AD07DD6B805838DB /* AtomicValue.swift in Sources */,
+				C036B3B56D04F941C61BC1ABF41CA99B /* AuthManager.swift in Sources */,
+				394D7DD9A19EA5C614B752AA9D360912 /* CocoaLumberjack.swift in Sources */,
+				80E8CEBA01017795E6B737F479305E01 /* CollectionPipeline.swift in Sources */,
+				0863F52373DCEE15DF607D8092404D3A /* ConfigManager.swift in Sources */,
+				D5A5A34FAB25CCCB4EAE5BAC443CB567 /* Constants.swift in Sources */,
+				A645D4F594501CE0A617086DC4B52202 /* CoreError.swift in Sources */,
+				DDE0EA2DBECFD5C038D501CA0B603A98 /* CoreLocationManager.swift in Sources */,
+				C41C996E80E8DFEA44CF39A8C8C6D5EC /* DatabaseManager.swift in Sources */,
+				D825300614CF5AB80681C97486F57773 /* DatabaseProtocol.swift in Sources */,
+				5653725351B5C474DB355C2327BD8154 /* DataStore.swift in Sources */,
+				01B59E8ECD2BFFEC1B47AA8D6E1B434F /* DDAbstractDatabaseLogger.m in Sources */,
+				212B9ACF5F3DC24A3D870460F245D74F /* DDASLLogCapture.m in Sources */,
+				EF134C5248488C86AF5A95653CC97E47 /* DDASLLogger.m in Sources */,
+				C5D960BD43C215B51EEF7DA50400BF01 /* DDAssert.swift in Sources */,
+				FFDD17559906F715B8AF5E601C1902D3 /* DDFileLogger.m in Sources */,
+				0748DEB29FE6703FA189AC412A4186D4 /* DDLog.m in Sources */,
+				F6D78EC9128889B3BBB55E7FD89DA89D /* DDOSLogger.m in Sources */,
+				DDD34793B276600D4DF1A97CE0602A86 /* DDTTYLogger.m in Sources */,
+				198180A938981CA931D6A1F602FBB1F5 /* Debouncer.swift in Sources */,
+				11ACABB4CD290F5EC51784C947950D2F /* DeviceInfo.swift in Sources */,
+				1DF0BB95EE97ECF361C2E2E974480FDA /* Dispatch.swift in Sources */,
+				00B06CCA4FE9E408EEA56468F83F82BF /* Errors.swift in Sources */,
+				B60A260B71FABCAA332D51C1FAC2AB14 /* Event.swift in Sources */,
+				F77F736496CDD118580696697630E1A8 /* EventsFMDBDatabaseManager.swift in Sources */,
+				4AC54AB20A4E96E73B88929092AF64BF /* Executor.swift in Sources */,
+				0D228BC7C39CA0392E39231DB8B8C9C4 /* FileStore.swift in Sources */,
+				3017DA663CC7079B7D5A5BD269D2B3E3 /* FMDatabase.m in Sources */,
+				2B34FB82EFBA140D614E1D966D86BC93 /* FMDatabaseAdditions.m in Sources */,
+				1D7AC0B904F3FEABA5BBC9FD19E865DC /* FMDatabasePool.m in Sources */,
+				98A72E6E8C1A41AEDC76CB902AF9D940 /* FMDatabaseQueue.m in Sources */,
+				4C789A2E7F481C8FB3FAD3C718609AB1 /* FMDBManager.swift in Sources */,
+				3C3FAE457095B36FF0BDD7D98351981D /* FMResultSet.m in Sources */,
+				691E101538A0D4E02E0DCA620885D1AC /* FoundationExtensions.swift in Sources */,
+				989A9DAABE1FA74345D8DCAD7AFCEA5C /* HealthService.swift in Sources */,
+				2AE8B556ABF259585F906176783E5D81 /* HealthServiceData.swift in Sources */,
+				884474B78E50F39622121BD8A5C09301 /* HeartbeatInfo.swift in Sources */,
+				8125811D0A125D4E65AE3CC804F8C322 /* HeartbeatRepeatingTimer.swift in Sources */,
+				5C4A98DEEF47034F2AF82D77CCE08F40 /* HeartbeatService.swift in Sources */,
+				FDB3DB35DACFC97B4802DB130EB4CB1A /* HeartbeatServiceHandler.swift in Sources */,
+				64D2D5B0F00CBF3BB437F6592C4F3CF0 /* HyperTrackCore-dummy.m in Sources */,
+				DC08AA6859532EFA759BF3A47C528515 /* HyperTrackCore.swift in Sources */,
+				20F5967587BFDB39A243D4EA06553D07 /* InitializationPipeline.swift in Sources */,
+				F99B402FE7A0A6B83915113CB4155EE3 /* LastSessionInfo.swift in Sources */,
+				3370A4F6C326DE5E3427BAE3DF2D71AB /* LocationData.swift in Sources */,
+				2279FCD1D033489F98E8048F203E7FFE /* LocationService.swift in Sources */,
+				2A62C51536189C4B4AB06B2605FE6B60 /* LocationServiceInitializationPipeline.swift in Sources */,
+				F6992C702DD65BFF4B7986F424FBAA8F /* Logger.swift in Sources */,
+				F7C83FF18EBA480A37F30E2B01F8852A /* PipelineSteps.swift in Sources */,
+				11A420D1533DF3D38D019C8802669E01 /* PrivacyDataTypes.swift in Sources */,
+				DCD2216A79374C662534E78AC6D033B5 /* PrivateDataAccessProvider.swift in Sources */,
+				EDFD3001A9C1400C33CC04B2B74F747A /* Provider.swift in Sources */,
+				23489C1218825B0E77E538FCA44DACDC /* Reachability.m in Sources */,
+				7B73B34264C4399309DAC181263C938B /* Repeater.swift in Sources */,
+				622BBE78ABC3E8E7290984BD9B7F1B9A /* Request.swift in Sources */,
+				10B83B3FC044122CC65F1C8D13BFF37F /* Response.swift in Sources */,
+				7CB172390046B81D8B1EB0A1894BCCD5 /* ServiceManager.swift in Sources */,
+				0369B3C046FCE30D7539B2C644D7B25C /* ServiceProtocols.swift in Sources */,
+				B8184782E519CE4CF00B63A44ABA0C70 /* Task+ContinueWith.swift in Sources */,
+				A4DFA27192880A0E966F4B2D4089544B /* Task+Delay.swift in Sources */,
+				E90CECCBFB0024BC722F8E91A0906EAC /* Task+WhenAll.swift in Sources */,
+				4CED8E9CB584BBA406B02870B3885F7C /* Task+WhenAny.swift in Sources */,
+				3E2B661FF858013EFADE281090628F7A /* Task.swift in Sources */,
+				01B996BE77472D3A686A11520A0D883E /* TaskCompletionSource.swift in Sources */,
+				0138F5C6A4BCE4DB33DA18D0DB592AE8 /* Throttler.swift in Sources */,
+				DC9AC7E3C193DADFC9183BEB09B2DD58 /* TransmissionPipeline.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391C9BA12D7470432A99491974789C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A881BFCF78F7AE637FE793D8D5F41ECE /* Pods-HeartBee-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601F65AF08724424576FB2BA41DE5911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3AC41A183F689660A5613CEE6F8750 /* Pods-HeartBeeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77FCC2640413D7F4A757469A6C763B7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEDAEB26CDA231D456A1D8A5410351F /* Pods-HeartBeeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C074A046EE74F1BB2742EB461EC0CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HeartBee";
+			target = 7F1BE19B59A6464D9DF8DE13026D3FC6 /* Pods-HeartBee */;
+			targetProxy = 519156CEBC897DA639B9AF8B31155CFF /* PBXContainerItemProxy */;
+		};
+		A6309B2CFABF5B00167D60E936EA00A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HeartBee";
+			target = 7F1BE19B59A6464D9DF8DE13026D3FC6 /* Pods-HeartBee */;
+			targetProxy = F7D81A52913B37263AED0C68377736DE /* PBXContainerItemProxy */;
+		};
+		C4DAB62A59B01ED96B067731EF240D09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HyperTrackCore;
+			target = CCBC1237E147A4641EDED448464A82A3 /* HyperTrackCore */;
+			targetProxy = 574F9587994CD7E04645ED4A3997777E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E0464127B778C58D0EC7B7C9C23B23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC4A6B7AABFEDD28C80C5952C7A3256 /* Pods-HeartBeeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartBeeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartBeeUITests/Pods-HeartBeeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3400F22C833F6265FE591E53821115F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E7AC5F3CDCF68EBB85B43B15572441D /* Pods-HeartBee.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartBee/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartBee/Pods-HeartBee.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38006100D345D40F8944E33D1F0CE563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6A0B765A89E094862359F43CFD0437C /* Pods-HeartBeeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartBeeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartBeeTests/Pods-HeartBeeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8A6F813AB2EC3B0C06E966F97DC067A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C0B0C38456AD11B2D2D0B75970F058 /* HyperTrackCore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HyperTrackCore/HyperTrackCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HyperTrackCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HyperTrackCore/HyperTrackCore.modulemap";
+				PRODUCT_MODULE_NAME = HyperTrackCore;
+				PRODUCT_NAME = HyperTrackCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5330DDE1F325C89F6708B5E58C8FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C0B0C38456AD11B2D2D0B75970F058 /* HyperTrackCore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HyperTrackCore/HyperTrackCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HyperTrackCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HyperTrackCore/HyperTrackCore.modulemap";
+				PRODUCT_MODULE_NAME = HyperTrackCore;
+				PRODUCT_NAME = HyperTrackCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B28CAB49A35DA9B9DD0B05C140A69F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692B855062CB0A39A7B9FBE98C2166CE /* Pods-HeartBeeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartBeeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartBeeUITests/Pods-HeartBeeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3CC5762A73869AAD30A01FB943E86CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BBC260000D42C109477D262FD8A958 /* Pods-HeartBeeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartBeeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartBeeTests/Pods-HeartBeeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6A7E55DE7E98C498E174A8512B73C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBD059D3826B8C94C6B41BB7DCA96E5 /* Pods-HeartBee.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartBee/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartBee/Pods-HeartBee.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F6B5C7B953DA482D9A6131E1A0865F9 /* Build configuration list for PBXNativeTarget "Pods-HeartBee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A7E55DE7E98C498E174A8512B73C88 /* Debug */,
+				3400F22C833F6265FE591E53821115F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761A8CF88590CE229D4442AA914A1A09 /* Build configuration list for PBXNativeTarget "Pods-HeartBeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3CC5762A73869AAD30A01FB943E86CA /* Debug */,
+				38006100D345D40F8944E33D1F0CE563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9E73BA627946E7311FCC9834CEF6B5E /* Build configuration list for PBXNativeTarget "Pods-HeartBeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E0464127B778C58D0EC7B7C9C23B23A /* Debug */,
+				B28CAB49A35DA9B9DD0B05C140A69F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA79696BFEE55CA03C14CC7EC29AFA32 /* Build configuration list for PBXNativeTarget "HyperTrackCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B5330DDE1F325C89F6708B5E58C8FEC /* Debug */,
+				8A6F813AB2EC3B0C06E966F97DC067A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

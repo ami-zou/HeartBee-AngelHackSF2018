@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HyperTrackCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        HyperTrackCore.requestLocationPermission { (error) in
+            /// handle error if any
+        }
+        
+        HyperTrackCore.requestActivityPermission { (error) in
+            /// handle error if any
+        }
+        
+        HyperTrackCore.initialize(publishableKey: "pk_b633cacfde3d9d00450079c92e8690fa37e083b5") { (error) in
+            /// perform post initialization actions
+            /// handle error if any
+        }
+        
         return true
     }
 
