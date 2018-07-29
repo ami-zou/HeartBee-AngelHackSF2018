@@ -3,24 +3,36 @@
 
   <string name="agora_app_id">f5e889dc03f844c4aaa5fda833f5cf26</string>
 </resources>
-*/
 
-/*
-* Here is the notification part!
-*/
 'use strict';
 
+/*
 var myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
+*/
+console.log("HIIIIII! Main.js is running");
 
-console.log("print");
+/*register sw
+*/
 
+//Notification + HeartRate set up
+var heartRate = 200;
+var threshhold = 120;
+document.getElementById("insert").innerHTML = heartRate;
 
+document.getElementById("notification").style.visibility='hidden';
+console.log("Hide notification!");
 
 /*
 * Now let's work on notification
 *
+
+$.getscript("url or name of 1st Js File",function(){
+fn();
+});
+
 */
+
 
 Notification.requestPermission( function(status){
     console.log('Notification permission: ',status);
@@ -68,7 +80,7 @@ function subscribeUser() {
 }
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function(reg) {
+  navigator.serviceWorker.register('sw.js').then(function(reg) {
     console.log('Service Worker Registered!', reg);
 
     reg.pushManager.getSubscription().then(function(sub) {
@@ -84,4 +96,14 @@ if ('serviceWorker' in navigator) {
    .catch(function(err) {
     console.log('Service Worker registration failed: ', err);
   });
+}
+
+//TRIGGER
+
+if(heartRate > threshhold){
+  console.log("Display notification!");
+  document.getElementById("notification").style.visibility='visible';
+  join();
+  displayNotification();
+  //getDevices();
 }

@@ -16,16 +16,6 @@ AgoraRTC.Logger.info('this is info');
 AgoraRTC.Logger.debug('this is debug');
 
 //===========GOOD TO EXECUTE===================
-//STYLING
-var heartRate = 200;
-var threshhold = 120;
-document.getElementById("insert").innerHTML = heartRate;
-
-document.getElementById("notification").style.visibility='hidden';
-console.log("Hide notification!");
-
-
-//FOR ARGORA
 
 var client, localStream, camera, microphone;
 
@@ -190,10 +180,3 @@ function getDevices() {
 //audioSelect.onchange = getDevices;
 //videoSelect.onchange = getDevices;
 getDevices();
-
-if(heartRate > threshhold){
-  console.log("Display notification!");
-  document.getElementById("notification").style.visibility='visible';
-  join();
-  //getDevices();
-}

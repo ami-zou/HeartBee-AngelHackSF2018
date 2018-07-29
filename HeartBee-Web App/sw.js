@@ -1,5 +1,7 @@
 'use strict';
 
+console.log("registering Service Worker!");
+
 self.addEventListener('notificationclose', function(e) {
   var notification = e.notification;
   var primaryKey = notification.data.primaryKey;
