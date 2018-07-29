@@ -41,18 +41,42 @@ var heartRate = 200;
 var upper_threshhold = 120;
 var lower_threshhold = 20;
 //===============================================
+document.getElementById("insert_heartrate").innerHTML = heartRate;
 
+function checkHR(){
+  if(heartRate <= lower_threshhold){
+    console.log("heartRate too low!!!");
+    document.getElementById("insert_condition").innerHTML = "Heart Rate Too Low";
+  }else if(heartRate > upper_threshhold){
+    console.log("Display notification!");
+    document.getElementById("insert_condition").innerHTML = "Heart Rate Too High";
+    document.getElementById("notification").style.visibility='visible';
+  //document.getElementById("insert_condition").innerHTML.style.color = red;
+    join();
+    displayNotification();
+  //getDevices();
+  }else{
+    document.getElementById("insert_condition").innerHTML = "Good";
+  }
+}
+
+checkHR();
+
+//==========NOTIFICATION===========
 document.getElementById("notification").style.visibility='hidden';
 console.log("Hide notification!");
+
+//==========DATA BASE SCANNING============
 var docClient = new AWS.DynamoDB.DocumentClient();
 
 var params = {
    TableName: "fitbit_data",
-   ProjectionExpression: "heartRate"
+  // ProjectionExpression: "heartRate"
 };
 
 console.log("Scanning fitbit table.");
-docClient.scan(params, onScan);
+//TODO FIX THIS!!!
+//docClient.scan(params, onScan);
 
 function onScan(err, data) {
  console.log("scanning");
@@ -63,7 +87,7 @@ function onScan(err, data) {
        console.log("Scan succeeded.");
        data.Items.forEach(function(hR) {
           console.log(
-               hR);
+               hR.hearRate);
        });
 
        // continue scanning if we have more movies, because
@@ -77,14 +101,19 @@ function onScan(err, data) {
 
        //ALL GOOD: UPDATE DATA
        //TRIGGER
-       data.Items.forEach(check);
+
+/****NEED TO FIX THIS****/
+//
+//TODO       data.Items.forEach(check);
 
        function check(hR){
-         heartRate = hR;
+         setInterval(check, 3000);
+
+         heartRate = hR.hearRate;
          document.getElementById("insert_heartrate").innerHTML = heartRate;
          checkHR();
 
-         setTimeout(check, 5000);
+
        }
 
 
