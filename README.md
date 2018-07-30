@@ -1,13 +1,16 @@
 # HeartBee-AngelHackSF2018
-(A Fitbit App + Web App + iOS Mobile App): Heartbee allows you to take care of your loved ones by providing a dashboard of your family’s heart rates as relayed by the Fitbit watch
+(A Fitbit App + Web App + iOS Mobile App): HeartBee allows you to take care of your loved ones by providing a dashboard of your family’s heart rates as relayed by the Fitbit watch
 
 ========Team==============
 
-This platform is developed from scratch during AngelHacks SF 2018 on July 28 - 29, 2018 in Parisoma, San Francisco.
+This platform is developed from scratch during AngelHack SF 2018 on July 28 - 29, 2018 in Parisoma, San Francisco (https://www.eventbrite.com/e/angelhack-san-francisco-hackathon-2018-tickets-45086935237#)
+- AngelHack's Call For A Cause Award winner
+- Fitbit's Healthcare Challenge winner
+- HyperTrack's $1000 Challenge winner
 
 Team member:
 
-- Wanyi Chen: Fitbit App - setting up tracking, threshhold, vibration, and sending data to AWS.
+- Wanyi Chen: Fitbit App - setting up tracking, threshhold, vibration, of the Fitbit app and sending data to AWS.
 - Sophia Liu: Design - designing logo, dashboard, mobile app, and pitch deck.
 - Gabi Stein: Database & Project Management - setting up Amazon DynamonDB, connecting it with Fitbit, and hosting the website; making pitch deck and planning for presentation.
 - Ami Zou: Web App & iOS App - building the web app using HTML, CSS, and Javascript and using Agora.io's SDK for video streaming; building the iOS App using Swift and using HyperTrack's SDK for location tracking.
@@ -31,8 +34,6 @@ Using Agora.io's SDK, we enabled real-time video streaming so family members can
 
 Using HyperTrack's SDK, we enabled location tracking and historical path. In the iOS mobile app, family members can see each others' last visited places and 15-mins path, and when an emergency happens, they know exactly where to rescue the person in danger.
 
-In conjunction, these two apps work together to keep everyone updated on the health status of their loved ones and keep everyone in check.
+Our apps (Fitbit Ionic, Web, and iOS mobile) work together to keep everyone updated on the health status of their loved ones and keep everyone in check. It can easily be scaled into a tablet, an Anroid app, and other platforms. 
 
-Although we designed for Fitbit Ionic and web this app can easily be scaled into a tablet or mobile app. The mobile app will have a video chatting function using Agora to help elderly seniors communicate with their family members in every way possible.
-
-This app is targeted to people with elderly parents at risk of heart attacks. So if you or someone you know has a elderly loved one you care about, give them the freedom they need but also the peace of mind you need, with Heartbee.
+HeartBee is targeted to people with elderly parents at risk of heart attacks. So if you or someone you know has a elderly loved one you care about, give them the freedom they need but also the peace of mind you need, with Heartbee.
