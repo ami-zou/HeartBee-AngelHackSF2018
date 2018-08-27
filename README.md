@@ -3,17 +3,17 @@
 
 ## Team
 
-This platform is developed from scratch during AngelHack SF 2018 on July 28 - 29, 2018 in Parisoma, San Francisco (https://www.eventbrite.com/e/angelhack-san-francisco-hackathon-2018-tickets-45086935237#)
+This platform is developed from scratch during [AngelHack SF 2018](https://www.eventbrite.com/e/angelhack-san-francisco-hackathon-2018-tickets-45086935237#) on July 28 - 29, 2018 in Parisoma, San Francisco 
 - AngelHack's Call For A Cause Award winner
 - Fitbit's Healthcare Challenge winner
 - HyperTrack's $1000 Challenge winner
 
 ### Team member
 
-- Wanyi Chen: Fitbit App - setting up tracking, threshhold, vibration, of the Fitbit app and sending data to AWS. https://github.com/WanyiChen/Heartbee/
+- [Wanyi Chen](https://github.com/WanyiChen/Heartbee/): Fitbit App - setting up tracking, threshhold, vibration, of the Fitbit app and sending data to AWS. 
 - Sophia Liu: Design - designing logo, dashboard, mobile app, and pitch deck.
 - Gabi Stein: Database & Project Management - setting up Amazon DynamonDB, connecting it with Fitbit, and hosting the website; making pitch deck and planning for presentation.
-- Ami Zou: Web App & iOS App - building the web app using HTML, CSS, and Javascript and using Agora.io's SDK for video streaming; building the iOS App using Swift and using HyperTrack's SDK for location tracking.
+- Ami Zou (Me): Web App & iOS App - building the web app using HTML, CSS, and Javascript and using Agora.io's SDK for video streaming; building the iOS App using Swift and using HyperTrack's SDK for location tracking.
 
 ## Story
 
