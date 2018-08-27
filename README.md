@@ -11,8 +11,8 @@ This platform is developed from scratch during [AngelHack SF 2018](https://www.e
 ### Team member
 
 - [Wanyi Chen](https://github.com/WanyiChen/Heartbee/): Fitbit App - setting up tracking, threshhold, vibration, of the Fitbit app and sending data to AWS. 
-- Sophia Liu: Design - designing logo, dashboard, mobile app, and pitch deck.
-- Gabi Stein: Database & Project Management - setting up Amazon DynamonDB, connecting it with Fitbit, and hosting the website; making pitch deck and planning for presentation.
+- [Sophia Liu](https://www.linkedin.com/in/sophialiuinc/): Design - designing logo, dashboard, mobile app, and pitch deck.
+- [Gabi Stein](https://github.com/gabistein): Database & Project Management - setting up Amazon DynamonDB, connecting it with Fitbit, and hosting the website; making pitch deck and planning for presentation.
 - Ami Zou (Me): Web App & iOS App - building the web app using HTML, CSS, and Javascript and using Agora.io's SDK for video streaming; building the iOS App using Swift and using HyperTrack's SDK for location tracking.
 
 ## Story
